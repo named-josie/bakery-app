@@ -1,0 +1,17 @@
+{
+  "name": "bakery-app",
+  "version": "1.0.0",
+  "description": "fullstack bakery e-commerce app ",
+  "main": "back-end/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bakery",
+    "bread",
+    "cakes",
+    "app"
+  ],
+  "author": "Jossy",
+  "license": "ISC"
+}
