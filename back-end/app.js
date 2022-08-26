@@ -15,7 +15,7 @@ app.use(cors());
 app.use('/products', productController);
 app.use('/', (req, res) => {
   res.send("<h1>🎂🍰🧁Baking Goods Api 🥪🥖🥐!</h1>");
-}); //look for the basic route in snackController
+}); //look for the basic route in productController
 
 app.get('*', (req, res) => {
   res.status(404).send('Not found');
