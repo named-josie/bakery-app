@@ -7,7 +7,7 @@ const db = require('../db/dbConfig');
 //import validation
 const {
     getAllProducts,
-    get_A_Product,
+    getAProduct,
     createProduct,
     updateProduct,
     deleteProduct,
@@ -44,7 +44,7 @@ products.get('/:id', async (req, res) => {
   console.log('get one /:id');
   const { id } = req.params;
 
-  const product = await get_A_Product(id);
+  const product = await getAProduct(id);
   if (product.id) {
     res.status(200).json({
       success: true,

@@ -1,7 +1,12 @@
 import React from 'react'
+import ProductDetails from '../ProductDetails'
+
 
 export default function Show() {
   return (
-    <div>Show</div>
+    <div className='shows'>
+    <ProductDetails/>
+  </div>
+ 
   )
 }
