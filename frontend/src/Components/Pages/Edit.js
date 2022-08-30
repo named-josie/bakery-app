@@ -1,5 +1,5 @@
 import React from 'react';
-import EditProduct from '../Edit_Product';
+import EditProduct from '../EditProduct';
 
 export default function Edit() {
   return (

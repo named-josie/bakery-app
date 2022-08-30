@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductDetails from '../Product_Details'
+import ProductDetails from '../ProductDetails'
 
 
 export default function Show() {
