@@ -1,5 +1,5 @@
 import React from 'react';
-import NewProduct from '../NewProduct';
+import NewProduct from '../New_Product';
 
 export default function New() {
   return (
