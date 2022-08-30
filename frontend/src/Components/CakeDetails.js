@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const API = process.env.REACT_APP_API_URL;
 
-export default function Cake_Details() {
+export default function CakeDetails() {
   const [cake, setCakes] = useState([]);
   let { id } = useParams();
   const navigate = useNavigate();

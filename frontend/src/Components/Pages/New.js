@@ -1,10 +1,11 @@
-import React from 'react'
-import NewProduct from '../NewProduct'
+import React from 'react';
+import NewProduct from '../NewProduct';
 
 export default function New() {
   return (
     <div className='new'>
-    <NewProduct/>
-  </div>
-  )
+      <h1>New</h1>
+      <NewProduct/>
+    </div>
+  );
 }

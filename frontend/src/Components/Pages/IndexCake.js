@@ -3,7 +3,8 @@ import '../Styles/cakes.css'
 export default function IndexCake() {
   return (
     <div>
-      <Cakes />
+      <h1>Index</h1>
+      <Cakes/>
     </div>
   );
 }
