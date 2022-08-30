@@ -1,5 +1,5 @@
 import Products from '../Products'
-import Cakes from '../Cakes'
+import '../Styles/product.css'
 
 
 

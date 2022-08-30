@@ -1,0 +1,9 @@
+nav {
+    background: #AD717A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    box-shadow: 2px 2px 4px grey;
+    margin-bottom: 1em;
+  }

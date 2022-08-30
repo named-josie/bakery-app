@@ -1,0 +1,101 @@
+
+
+
+
+
+.cake-name{
+   display: flex;
+   flex-wrap: wrap;
+    font-size: 22px;
+    font-weight: 900;
+    inline-size: 150px;
+    padding-top: 10px;
+    padding-left: 20px;
+    color: #857AAC;
+    position: relative;
+    left: 35px; 
+    top: 7px;
+    float: left;
+    
+}
+
+.cake-price{
+    display: flex;
+    font-size: 23px;
+    padding-left: 10px;
+    position: relative;
+    top: 20px;
+    left: 12%;
+    
+}
+
+.cake-name:hover{
+       color: #AD717A;
+
+}
+
+.cake-pic{
+    margin: auto;
+    border-radius: 10px;
+    background-color: #857aac47;
+    padding: 2%;
+    box-shadow: 5px 10px #888888;
+    border: 2px solid ;
+    position: relative;
+    left: 35px; 
+    top: 15px;
+       
+}
+
+ .cake-pic:hover{
+    animation: snack-pic 2s ease infinite;
+}
+
+@keyframes cake-pic {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+    
+
+div.health{
+    margin-top: 70%;
+   margin-right: 10px;
+    margin-bottom: 10px;
+  
+    width:70px;
+    transform: scale(0.6);
+    position: relative;
+    right: 20%;
+    top: 10px;
+}
+
+
+.all-cakes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+ 
+    
+}
+
+.title-cakes{
+    text-align: center;
+    font-size: 70px;
+   
+}
+
+
+.back-button{
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+
+.title-cakes{
+    padding: 2%;
+    text-align: center;
+  
+}
+

@@ -1,10 +1,10 @@
 import React from 'react'
-import EditProduct from '../EditProduct'
+import EditCake from '../EditCake'
 
 export default function Edit() {
   return (
-    <div><h1>Edit</h1>
-    <EditProduct/>
+    <div><h1>Edit Cake</h1>
+    <EditCake/>
     </div>
   )
 }

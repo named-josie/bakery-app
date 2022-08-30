@@ -1,7 +1,10 @@
 import React from 'react'
+import NewProduct from '../NewProduct'
 
 export default function New() {
   return (
-    <div>New</div>
+    <div className='new'>
+    <NewProduct/>
+  </div>
   )
 }

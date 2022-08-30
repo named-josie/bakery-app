@@ -4,6 +4,8 @@ import axios from 'axios';
 
 const API = process.env.REACT_APP_API_URL;
 
+const formatter = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' })
+
 export default function Products() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
@@ -22,7 +24,7 @@ export default function Products() {
       <h1 className='title-products'>products</h1>
       <section className='all-products'>
         {products?.map((product) => {
-          return <Product key={product.id} product={product} />;
+          return <Product key={product.id} product={product} formatter={formatter} />;
         })}
       </section>
       <br />

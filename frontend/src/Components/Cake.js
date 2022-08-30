@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
-export default function Cake({ cake }) {
+export default function Cake({ cake, formatter })
+
+{
   return (
     <div className='cake-card'>
       
@@ -12,6 +14,7 @@ export default function Cake({ cake }) {
         />
          <p className='cake-name'>{cake.name}</p>
       </Link>
+     <div className="cake-price" > <p>{formatter.format(cake.price)}</p></div>
     </div>
   );
 }

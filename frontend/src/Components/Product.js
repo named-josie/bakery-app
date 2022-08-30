@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Product({ product }) {
+export default function Product({ product, formatter }) {
   return (
     <div className='product-card'>
       
@@ -12,6 +12,7 @@ export default function Product({ product }) {
         />
          <p className='product-name'>{product.name}</p>
       </Link>
+      <p className="product-price">{formatter.format(product.price)}</p>
     </div>
   );
 }
