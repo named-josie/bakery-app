@@ -47,8 +47,8 @@
        
 }
 
- .cake-pic:hover{
-    animation: snack-pic 2s ease infinite;
+ /* .cake-pic:hover{
+    animation: cake-pic 2s ease infinite;
 }
 
 @keyframes cake-pic {
@@ -56,7 +56,7 @@
     40% {transform: translateY(-30px);}
     60% {transform: translateY(-15px);}
 }
-    
+     */
 
 div.health{
     margin-top: 70%;
