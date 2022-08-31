@@ -1,36 +1,36 @@
 //controls the routes the way it goes for
 const express = require('express');
 //access to being able to things like get or set, update or delete
-const cakes = express.Router();
+const breads = express.Router();
 //import db
 const db = require('../db/dbConfig');
 //import validation
 const {
-    getAllCakes,
-    getACake,
-    createCake,
-    updateCake,
-    deleteCake,
-} = require('../queries/cakes');
+    getAllBreads,
+    getABread,
+    createBread,
+    updateBread,
+    deleteBread,
+} = require('../queries/breads');
 
 const {
     checkName,
     checkImage,
-    checkFavorite,
     checkCapitalization,
-  } = require('../validation/checkproducts');
+  } = require('../validation/checkProducts');
 
-
+//any() coming from the pg promise, first argument is sql command,
+//.any can be used when it is returning all or none
 
 //Index
-cakes.get('/', async (req, res) => {
+breads.get('/', async (req, res) => {
   console.log('get all /');
 
-  const allCakes = await getAllCakes();
-  if (allCakes[0]) {
+  const allBreads = await getAllBreads();
+  if (allBreads[0]) {
     res.status(200).json({
       success: true,
-      payload: allCakes,
+      payload: allBreads,
     });
   } else {
     res.status(500).json({
@@ -40,15 +40,15 @@ cakes.get('/', async (req, res) => {
 });
 
 //Show
-cakes.get('/:id', async (req, res) => {
+breads.get('/:id', async (req, res) => {
   console.log('get one /:id');
   const { id } = req.params;
 
-  const cake = await getACake(id);
-  if (cake.id) {
+  const bread = await getABread(id);
+  if (bread.id) {
     res.status(200).json({
       success: true,
-      payload: cake,
+      payload: bread,
     });
   } else {
     res.status(404).json({
@@ -60,18 +60,17 @@ cakes.get('/:id', async (req, res) => {
 });
 
 //CREATE
-cakes.post(
+breads.post(
   '/new',
   checkName,
   checkImage,
-  checkFavorite,
   checkCapitalization,
   async (req, res) => {
     try {
-      const addCake = await createCake(req.body);
+      const addBread = await createBread(req.body);
       res.status(200).json({
         success: true,
-        payload: addCake[0],
+        payload: addBread[0],
       });
     } catch (error) {
       console.log(error.message);
@@ -81,15 +80,15 @@ cakes.post(
 );
 
 //DELETE
-cakes.delete('/:id', async (req, res) => {
+breads.delete('/:id', async (req, res) => {
   console.log('Delete /:id', req.body, req.params);
   const { id } = req.params;
-  const deletedCake = await deleteCake(id);
-  if (deletedCake) {
-    if (deletedCake.id) {
+  const deletedBread = await deleteBread(id);
+  if (deletedBread) {
+    if (deletedBread.id) {
       res.status(200).json({
         success: true,
-        payload: deletedCake,
+        payload: deletedBread,
       });
     } else {
       res.status(404).json({
@@ -100,26 +99,25 @@ cakes.delete('/:id', async (req, res) => {
   } else {
     res.status(500).json({
       success: false,
-      payload: deletedCake,
+      payload: deletedBread,
     });
   }
 });
 
 //UPDATE
-cakes.put(
+breads.put(
   '/:id',
   checkName,
   checkImage,
-  checkFavorite,
   checkCapitalization,
   async (req, res) => {
     console.log('Put /:id');
     const { id } = req.params;
-    const updatedCake = await updateCake(id, req.body);
-    if (updatedCake.id) {
+    const updatedBread = await updateBread(id, req.body);
+    if (updatedBread.id) {
       res.status(200).json({
         success: true,
-        payload: updatedCake,
+        payload: updatedBread,
       });
     } else {
       res.status(404).json({
@@ -130,4 +128,4 @@ cakes.put(
   }
 );
 
-module.exports = cakes;
+module.exports = breads;

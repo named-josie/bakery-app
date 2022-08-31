@@ -1,36 +1,36 @@
 //controls the routes the way it goes for
 const express = require('express');
 //access to being able to things like get or set, update or delete
-const products = express.Router();
+const minis = express.Router();
 //import db
 const db = require('../db/dbConfig');
 //import validation
 const {
-    getAllProducts,
-    getAProduct,
-    createProduct,
-    updateProduct,
-    deleteProduct,
-} = require('../queries/products');
+    getAllMinis,
+    getAMini,
+    createMini,
+    updateMini,
+    deleteMini,
+} = require('../queries/minis');
 
 const {
     checkName,
     checkImage,
+    checkFavorite,
     checkCapitalization,
-  } = require('../validation/checkProducts');
+  } = require('../validation/checkproducts');
 
-//any() coming from the pg promise, first argument is sql command,
-//.any can be used when it is returning all or none
+
 
 //Index
-products.get('/', async (req, res) => {
+minis.get('/', async (req, res) => {
   console.log('get all /');
 
-  const allProducts = await getAllProducts();
-  if (allProducts[0]) {
+  const allMinis = await getAllMinis();
+  if (allMinis[0]) {
     res.status(200).json({
       success: true,
-      payload: allProducts,
+      payload: allMinis,
     });
   } else {
     res.status(500).json({
@@ -40,15 +40,15 @@ products.get('/', async (req, res) => {
 });
 
 //Show
-products.get('/:id', async (req, res) => {
+minis.get('/:id', async (req, res) => {
   console.log('get one /:id');
   const { id } = req.params;
 
-  const product = await getAProduct(id);
-  if (product.id) {
+  const mini = await getAMini(id);
+  if (mini.id) {
     res.status(200).json({
       success: true,
-      payload: product,
+      payload: mini,
     });
   } else {
     res.status(404).json({
@@ -60,17 +60,18 @@ products.get('/:id', async (req, res) => {
 });
 
 //CREATE
-products.post(
+minis.post(
   '/new',
   checkName,
   checkImage,
+  checkFavorite,
   checkCapitalization,
   async (req, res) => {
     try {
-      const addProduct = await createProduct(req.body);
+      const addMini = await createMini(req.body);
       res.status(200).json({
         success: true,
-        payload: addProduct[0],
+        payload: addMini[0],
       });
     } catch (error) {
       console.log(error.message);
@@ -80,15 +81,15 @@ products.post(
 );
 
 //DELETE
-products.delete('/:id', async (req, res) => {
+minis.delete('/:id', async (req, res) => {
   console.log('Delete /:id', req.body, req.params);
   const { id } = req.params;
-  const deletedProduct = await deleteProduct(id);
-  if (deletedProduct) {
-    if (deletedProduct.id) {
+  const deletedMini = await deleteMini(id);
+  if (deletedMini) {
+    if (deletedMini.id) {
       res.status(200).json({
         success: true,
-        payload: deletedProduct,
+        payload: deletedMini,
       });
     } else {
       res.status(404).json({
@@ -99,25 +100,26 @@ products.delete('/:id', async (req, res) => {
   } else {
     res.status(500).json({
       success: false,
-      payload: deletedProduct,
+      payload: deletedMini,
     });
   }
 });
 
 //UPDATE
-products.put(
+minis.put(
   '/:id',
   checkName,
   checkImage,
+  checkFavorite,
   checkCapitalization,
   async (req, res) => {
     console.log('Put /:id');
     const { id } = req.params;
-    const updatedProduct = await updateProduct(id, req.body);
-    if (updatedProduct.id) {
+    const updatedMini = await updateMini(id, req.body);
+    if (updatedMini.id) {
       res.status(200).json({
         success: true,
-        payload: updatedProduct,
+        payload: updatedMini,
       });
     } else {
       res.status(404).json({
@@ -128,4 +130,4 @@ products.put(
   }
 );
 
-module.exports = products;
+module.exports = minis;

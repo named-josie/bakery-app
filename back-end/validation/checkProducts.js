@@ -32,9 +32,18 @@ const checkCapitalization = (req, res, next) => {
     .join(' ');
   next();
 };
+const checkFavorite = (req, res, next) => {
+  const { is_favorite } = req.body;
+  if (is_favorite !== true && is_favorite !== false) {
+    return res.status(400).send("Must be True or False!");
+  }
+  next();
+  };
+
 
 module.exports = {
   checkName,
   checkImage,
+  checkFavorite,
   checkCapitalization,
 };
