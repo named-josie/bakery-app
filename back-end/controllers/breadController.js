@@ -16,6 +16,7 @@ const {
 const {
     checkName,
     checkImage,
+    checkFavorite,
     checkCapitalization,
   } = require('../validation/checkProducts');
 
@@ -64,6 +65,7 @@ breads.post(
   '/new',
   checkName,
   checkImage,
+  checkFavorite,
   checkCapitalization,
   async (req, res) => {
     try {
@@ -109,6 +111,7 @@ breads.put(
   '/:id',
   checkName,
   checkImage,
+  checkFavorite,
   checkCapitalization,
   async (req, res) => {
     console.log('Put /:id');
