@@ -2,10 +2,10 @@
 
 this is a bakery app - I poured my heart and soul.
 
-
 ## Important Links
-- [deployed API Sever]()
-- [Deployed Frontend]()
+
+- [Deployed API Sever](https://limitless-brook-75822.herokuapp.com/)
+- [Deployed Frontend](https://bonifaciobakery.netlify.app/)
 - [Trello Board](https://trello.com/b/P34RvuLT/app-planning)
 - [Wireframes](https://wireframe.cc/nPmBk6)
 
