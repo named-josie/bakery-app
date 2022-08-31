@@ -1,5 +1,5 @@
 -- Connect 
-\c  dbam9f65t9g35m;
+\c  ;
 
 
 -- Create table
