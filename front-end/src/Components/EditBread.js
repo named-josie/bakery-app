@@ -78,15 +78,17 @@ export default function EditBread() {
         <label className='edit-label' htmlFor='description'>
         Description
         </label>
-        <input
-          className='text'
-          id='description'
-          value={bread.description}
-          type='text'
-          onChange={handleTextChange}
-          placeholder='text'
-          required
-        />
+        <textarea
+            rows="5"
+            cols="20"
+            className='text'
+            id='description'
+            value={bread.description}
+            type='text'
+            placeholder='words'
+            onChange={handleTextChange}
+            required
+            />
         <label className='edit-label' htmlFor='image'>
             Image Url
           </label>

@@ -1,4 +1,4 @@
-\c ;
+\c d6eqjdtp5euv6i;
 
 
 INSERT INTO breads (name, price, description, image, is_favorite) VALUES

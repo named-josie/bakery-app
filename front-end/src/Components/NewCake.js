@@ -61,7 +61,9 @@ export default function NewCake() {
           <label className='new-label1' htmlFor='description'>
           Description
           </label>
-          <input
+          <textarea
+            rows="5"
+            cols="20"
             className='text'
             id='description'
             value={cake.description}
@@ -69,7 +71,7 @@ export default function NewCake() {
             placeholder='words'
             onChange={handleTextChange}
             required
-          />
+            />
           <label className='new-label1' htmlFor='image'>
             Image Url
           </label>

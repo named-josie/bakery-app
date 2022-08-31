@@ -78,15 +78,17 @@ export default function EditCake() {
         <label className='edit-label' htmlFor='description'>
         Description
         </label>
-        <input
-          className='text'
-          id='description'
-          value={cake.description}
-          type='text'
-          onChange={handleTextChange}
-          placeholder='text'
-          required
-        />
+         <textarea
+            rows="5"
+            cols="20"
+            className='text'
+            id='description'
+            value={cake.description}
+            type='text'
+            placeholder='words'
+            onChange={handleTextChange}
+            required
+            />
         <label className='edit-label' htmlFor='image'>
             Image Url
           </label>

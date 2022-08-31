@@ -61,7 +61,9 @@ export default function NewBread() {
           <label className='new-label1' htmlFor='description'>
           Description
           </label>
-          <input
+            <textarea
+            rows="5"
+            cols="20"
             className='text'
             id='description'
             value={bread.description}
@@ -69,7 +71,10 @@ export default function NewBread() {
             placeholder='words'
             onChange={handleTextChange}
             required
-          />
+            />
+           
+          
+          
           <label className='new-label1' htmlFor='image'>
             Image Url
           </label>
