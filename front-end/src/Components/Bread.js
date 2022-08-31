@@ -13,7 +13,7 @@ export default function Bread({ bread, formatter, removeItem }) {
          <p className='bread-name'>{bread.name}</p>
       </Link>
       <p className="bread-price">{formatter.format(bread.price)}</p>
-      <button onClick={() => removeItem(bread.id)}>X</button>
+      {/* <button onClick={() => removeItem(bread.id)}>X</button> */}
     </div>
   );
 }

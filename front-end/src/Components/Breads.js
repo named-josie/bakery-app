@@ -5,9 +5,9 @@ import axios from 'axios';
 const API = process.env.REACT_APP_API_URL;
 
 const formatter = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' });
-const removeItem = (itemToBeDeleted) => {
-  setItems(items.filter((item) => itemToBeDeleted !== item));
-}
+// const removeItem = (itemToBeDeleted) => {
+//   setItems(items.filter((item) => itemToBeDeleted !== item));
+// }
 
 export default function Breads() {
   const [breads, setBreads] = useState([]);
@@ -27,7 +27,7 @@ export default function Breads() {
       <h1 className='title-breads'>breads</h1>
       <section className='all-breads'>
         {breads?.map((bread) => {
-          return <Bread key={bread.id} bread={bread} formatter={formatter} removeItem={removeItem} />;
+          return <Bread key={bread.id} bread={bread} formatter={formatter} />;
         })}
       </section>
       <br />
