@@ -4,16 +4,16 @@ import axios from 'axios';
 
 const API = process.env.REACT_APP_API_URL;
 
-export default function ProductDetails() {
-  const [product, setProducts] = useState([]);
+export default function BreadDetails() {
+  const [bread, setBreads] = useState([]);
   let { id } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
     axios
-      .get(`${API}/products/${id}`)
+      .get(`${API}/breads/${id}`)
       .then((res) => {
-        setProducts(res.data.payload);
+        setBreads(res.data.payload);
       })
 
       .catch(() => {
@@ -23,9 +23,9 @@ export default function ProductDetails() {
 
   const handleDelete = () => {
     axios
-      .delete(`${API}/products/${id}`)
+      .delete(`${API}/breads/${id}`)
       .then(() => {
-        navigate('/products');
+        navigate('/breads');
       })
       .catch(() => {
         console.warn('error');
@@ -33,28 +33,28 @@ export default function ProductDetails() {
   };
   return (
     <div className='show'>
-      <h1 className='show-title'>{product.name}</h1>
-        <img className='details_image' alt='' src={product.image}></img>
+      <h1 className='show-title'>{bread.name}</h1>
+        <img className='details_image' alt='' src={bread.image}></img>
         <br></br>
         <div className='show-info'>
         <h2 className='show_p'>
-        <span>Name: </span> {product.name}
+        <span>Name: </span> {bread.name}
       </h2>
       <h2 className='show_p'>
-        <span>Price: </span> {product.price}
+        <span>Price: </span> {bread.price}
       </h2>
       <h2 className='show_p'>
-        <span>Description: </span> {product.description}
+        <span>Description: </span> {bread.description}
       </h2>
       </div>
       <div className='showNavigation'>
         <div>
-          <Link to={`/products`}>
+          <Link to={`/breads`}>
             <button className='show_button'>Back</button>
           </Link>
         </div>
         <div>
-          <Link to={`/products/${product.id}/edit`}>
+          <Link to={`/breads/${bread.id}/edit`}>
             <button className='show_button'>Edit</button>
           </Link>
         </div>

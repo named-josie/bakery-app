@@ -4,22 +4,22 @@ import axios from 'axios';
 
 const API = process.env.REACT_APP_API_URL;
 
-export default function EditProduct() {
+export default function EditBread() {
     const navigate = useNavigate();
     let { id } = useParams();
-    const [product, setProduct] = useState({
+    const [bread, setBread] = useState({
       name: '',
       price: 0,
       description: '',
       image: '',
     });
 
-  const updateProduct = (updatedProduct) => {
+  const updateBread = (updatedBread) => {
     axios
-      .put(`${API}/products/${id}`, updatedProduct)
+      .put(`${API}/breads/${id}`, updatedBread)
       .then(
         () => {
-          navigate(`/products/${id}`);
+          navigate(`/breads/${id}`);
         },
         (error) => console.error(error),
       )
@@ -27,14 +27,14 @@ export default function EditProduct() {
   };
 
   const handleTextChange = (event) => {
-    setProduct({ ...product, [event.target.id]: event.target.value });
+    setBread({ ...bread, [event.target.id]: event.target.value });
   };
 
   useEffect(() => {
     axios
-      .get(`${API}/products/${id}`)
+      .get(`${API}/breads/${id}`)
       .then((res) => {
-        setProduct(res.data.payload);
+        setBread(res.data.payload);
       })
       .catch((err) => {
         console.warn(err);
@@ -43,12 +43,12 @@ export default function EditProduct() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    updateProduct(product, id);
+    updateBread(bread, id);
   };
 
   return (
     <div className='edit'>
-      <h1 className='title'>Edit product Entry</h1>
+      <h1 className='title'>Edit Bread Entry</h1>
       <form className='form' onSubmit={handleSubmit}>
       <div className='color2'>
         <label className='edit-label' htmlFor='name'>
@@ -58,9 +58,9 @@ export default function EditProduct() {
           className='text'
           id='name'
           type='text'
-          placeholder='Name Of product'
+          placeholder='Name Of Bread'
           required
-          value={product.name}
+          value={bread.name}
           onChange={handleTextChange}
         />
         <label className='edit-label' htmlFor='protein'>
@@ -71,7 +71,7 @@ export default function EditProduct() {
           id='price'
           type='number'
           name='price'
-          value={product.price}
+          value={bread.price}
           placeholder='0'
           onChange={handleTextChange}
         />
@@ -81,7 +81,7 @@ export default function EditProduct() {
         <input
           className='text'
           id='description'
-          value={product.description}
+          value={bread.description}
           type='text'
           onChange={handleTextChange}
           placeholder='text'
@@ -96,13 +96,13 @@ export default function EditProduct() {
             type='text'
             placeholder='https://www.image.com'
             required
-            value={product.image}
+            value={bread.image}
             onChange={handleTextChange}
           />
         <input type='submit' />
        
         </div>
-        <Link to={`/products/${id}`}>
+        <Link to={`/breads/${id}`}>
           <button className='edit-button'>Back</button>
         </Link>
         

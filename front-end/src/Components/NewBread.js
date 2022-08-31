@@ -4,9 +4,9 @@ import axios from 'axios';
 
 const API = process.env.REACT_APP_API_URL;
 
-export default function NewProduct() {
+export default function NewBread() {
   const navigate = useNavigate();
-  const [product, setProduct] = useState({
+  const [bread, setBread] = useState({
     name: '',
     price: 0,
     description: '',
@@ -14,15 +14,15 @@ export default function NewProduct() {
   });
 
   const handleTextChange = (event) => {
-    setProduct({ ...product, [event.target.id]: event.target.value });
+    setBread({ ...bread, [event.target.id]: event.target.value });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post(`${API}/products/new`, product)
+      .post(`${API}/breads/new`, bread)
       .then((res) => {
-        navigate('/products');
+        navigate('/breads');
       })
       .catch((err) => {
         console.warn(err);
@@ -41,9 +41,9 @@ export default function NewProduct() {
             className='text'
             id='name'
             type='text'
-            placeholder='Name Of Product'
+            placeholder='Name Of Bread'
             required
-            value={product.name}
+            value={bread.name}
             onChange={handleTextChange}
           />
           <label className='new-label1' htmlFor='protein'>
@@ -54,7 +54,7 @@ export default function NewProduct() {
             id='price'
             type='number'
             name='price'
-            value={product.price}
+            value={bread.price}
             placeholder='0'
             onChange={handleTextChange}
           />
@@ -64,7 +64,7 @@ export default function NewProduct() {
           <input
             className='text'
             id='description'
-            value={product.description}
+            value={bread.description}
             type='text'
             placeholder='words'
             onChange={handleTextChange}
@@ -79,7 +79,7 @@ export default function NewProduct() {
             type='text'
             placeholder='https://www.image.com'
             required
-            value={product.image}
+            value={bread.image}
             onChange={handleTextChange}
           />
           <br />

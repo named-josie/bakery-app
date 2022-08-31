@@ -1,11 +1,12 @@
 import React from 'react';
-import EditProduct from '../EditProduct';
+import EditBread from '../EditBread';
+
 
 export default function Edit() {
   return (
     <div>
       <h1>Edit</h1>
-      <EditProduct/>
+      <EditBread/>
     </div>
   );
 }

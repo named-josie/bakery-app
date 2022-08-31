@@ -3,7 +3,7 @@
 
 
 
-.product-name{
+.bread-name{
     display: flex;
     flex-wrap: wrap;
      font-size: 22px;
@@ -19,7 +19,7 @@
      
  }
  
- .product-price{
+ .bread-price{
      display: flex;
      font-size: 23px;
      padding-left: 10px;
@@ -29,12 +29,12 @@
      
  }
  
- .product-name:hover{
+ .bread-name:hover{
         color: #AD717A;
  
  }
  
- .product-pic{
+ .bread-pic{
      margin: auto;
      border-radius: 10px;
      background-color: #857aac47;
@@ -47,11 +47,11 @@
         
  }
  
-  .product-pic:hover{
+  .bread-pic:hover{
      animation: snack-pic 2s ease infinite;
  }
  
- @keyframes product-pic {
+ @keyframes bread-pic {
      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
      40% {transform: translateY(-30px);}
      60% {transform: translateY(-15px);}
@@ -71,7 +71,7 @@
  }
  
  
- .all-products {
+ .all-breads {
      display: flex;
      flex-wrap: wrap;
      padding: 2%;
@@ -79,7 +79,7 @@
      
  }
  
- .title-products{
+ .title-breads{
      text-align: center;
      font-size: 70px;
     
@@ -92,7 +92,7 @@
  }
  
 
- .title-products{
+ .title-breads{
      padding: 2%;
      text-align: center;
    

@@ -8,7 +8,7 @@ export default function NavBar() {
         <Link to="/">Home</Link>
       </h1>
      <h1>
-        <Link to="/products">Saborso</Link>
+        <Link to="/breads">Saborso</Link>
         </h1>
         <h1>
         <Link to="/cakes">Dulce</Link>

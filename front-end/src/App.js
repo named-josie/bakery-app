@@ -23,13 +23,13 @@ export default function App() {
         <main>
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/products' element={<IndexBread />} />
+            <Route path='/breads' element={<IndexBread />} />
             <Route path='/cakes' element={<IndexCake/>} />
-            <Route path='/products/new' element={<New />} />
+            <Route path='/breads/new' element={<New />} />
             <Route path='/cakes/new' element={<NewCakes />} />
-            <Route path='/products/:id' element={<Show />} />
+            <Route path='/breads/:id' element={<Show />} />
             <Route path='/cakes/:id' element={<ShowCake />} />
-            <Route path='/products/:id/edit' element={<Edit />} />
+            <Route path='/breads/:id/edit' element={<Edit />} />
             <Route path='/cakes/:id/edit' element={<EditCakes />} />
             <Route path='*' element={<FourOFour />} />
             <Route path='/about' element={<About />} />
