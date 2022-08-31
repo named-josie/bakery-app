@@ -8,19 +8,19 @@ export default function NavBar() {
       <div>
         <Link to="/"><img className="nav-image" src={logo3} alt="" ></img></Link>
       </div>
-      <h1 className="navbar">
+      <p className="navbar">
         <Link to="/todo">Menu</Link>
-        </h1>
-     <h1 className="navbar">
+        </p>
+     <p className="navbar">
         <Link to="/breads">Pan</Link>
-        </h1>
-        <h1 className="navbar">
+        </p>
+        <p className="navbar">
         <Link to="/cakes">Tartas</Link>
-        </h1>
+        </p>
        
-        <h1 className="navbar">
+        <p className="navbar">
         <Link to="/cakes">About</Link>
-        </h1>
+        </p>
     </nav>
   );
 }

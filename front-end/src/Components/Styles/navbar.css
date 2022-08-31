@@ -3,21 +3,23 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
     box-shadow: 2px 2px 4px grey;
     margin-bottom: 1em;
     font-family: 'Sacramento', cursive;
-    font-size: 30px;
   }
 
   .nav-image{
 display: flex;
-height: 30px;
+height: 35px;
 position: relative;
-transform: scale(8);
-margin-left: 50px;
-margin-top: 50px;
+transform: scale(5);
+margin-left: 70px;
+margin-top: 40px;
 
+}
+.navbar{
+  font-size: 35px;
+ padding-right: 60px;
 }
 
 .navbar a:link {
