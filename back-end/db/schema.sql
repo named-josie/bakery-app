@@ -6,6 +6,7 @@ CREATE DATABASE dev_products;
 -- Connect 
 \c  dev_products;
 
+
 DROP TABLE IF EXISTS breads;
 -- Create table
 CREATE TABLE 
