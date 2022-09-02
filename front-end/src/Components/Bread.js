@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Bread({ bread, formatter, removeItem }) {
+export default function Bread({ bread, formatter }) {
   return (
     <div className='bread-card'>
       

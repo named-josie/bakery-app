@@ -5,7 +5,7 @@ nav {
     align-items: center;
     box-shadow: 2px 2px 4px grey;
     margin-bottom: 1em;
-    font-family: 'Sacramento', cursive;
+    font-family: 'Sacramento', cursive; 
   }
 
   .nav-image{
@@ -37,3 +37,13 @@ margin-top: 40px;
   text-decoration-line: underline;
 }  
 
+.basket{
+  font-size: 40px;
+  color: beige;
+margin-right: 40px;
+}
+
+.basket:hover {
+  color: #DDAEC6;
+  
+}  

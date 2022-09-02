@@ -1,20 +1,39 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+export default function Cake({ cake, formatter, setItem }) {
+  // const [] = useState([]);
+  useEffect(() => {
+    localStorage.setItem('item', '0');
+  }, []);
 
-export default function Cake({ cake, formatter })
+  //  let item = []
 
-{
+  const handleClick = () => {
+    let itemNumber = Number.parseInt(localStorage.getItem('item'));
+    itemNumber++;
+    console.log('this is', itemNumber);
+    localStorage.setItem('item', itemNumber);
+    setItem(itemNumber);
+  };
+
   return (
     <div className='cake-card'>
-      
-      <Link to={`/cakes/`+cake.id} key={cake.id}>
-        <img className='cake-pic'
+      <Link to={`/cakes/` + cake.id} key={cake.id}>
+        <img
+          className='cake-pic'
           style={{ width: '275px', height: '255px' }}
           src={cake.image}
           alt=''
         />
-         <p className='cake-name'>{cake.name}</p>
+        <p className='cake-name'>{cake.name}</p>
       </Link>
-     <div className="cake-price" > <p>{formatter.format(cake.price)}</p></div>
+      <div className='cake-price'>
+        {' '}
+        <p>{formatter.format(cake.price)}</p>
+      </div>
+      <button className='cake-button' onClick={() => handleClick()}>
+        Carrito
+      </button>
     </div>
   );
 }

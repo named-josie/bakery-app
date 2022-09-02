@@ -12,19 +12,26 @@ import FourOFour from './Components/Pages/FourOFour';
 import About from './Components/Pages/About'
 import IndexBread from './Components/Pages/IndexBread';
 import IndexCake from './Components/Pages/IndexCake';
+import { useEffect, useState} from 'react';
 
 
 
 export default function App() {
+  // let products = localStorage.getItem('item');
+  const [item, setItem] = useState(0);
+  // useEffect(() => {
+  //   setItem(products);
+  // }, [products]);
+
   return (
     <div className='App'>
       <Router>
-        <NavBar />
+        <NavBar item={item} />
         <main>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/breads' element={<IndexBread />} />
-            <Route path='/cakes' element={<IndexCake/>} />
+            <Route path='/cakes' element={<IndexCake setItem={setItem}/>} />
             <Route path='/breads/new' element={<New />} />
             <Route path='/cakes/new' element={<NewCakes />} />
             <Route path='/breads/:id' element={<Show />} />
