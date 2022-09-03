@@ -1,5 +1,5 @@
 nav {
-    background: #ad717a;
+    background: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,11 +12,12 @@ nav {
 display: flex;
 height: 35px;
 position: relative;
-transform: scale(5);
+transform: scale(6);
 margin-left: 70px;
 margin-top: 40px;
-
 }
+
+
 .navbar{
   font-size: 35px;
  padding-right: 60px;
@@ -38,9 +39,10 @@ margin-top: 40px;
 }  
 
 .basket{
-  font-size: 40px;
+  font-size: 35px;
   color: beige;
-margin-right: 40px;
+  margin-right: 40px;
+  font-family: 'Emilys Candy', cursive;
 }
 
 .basket:hover {

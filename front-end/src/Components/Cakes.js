@@ -21,7 +21,7 @@ export default function Cakes({setItem}) {
 
   return (
     <div className='cakes'>
-      <h1 className='title-cakes'>cakes</h1>
+      {/* <h1 className='title-cakes'>Tartas</h1> */}
       <section className='all-cakes'>
         {cakes?.map((cake) => {
           return <Cake key={cake.id} setItem={setItem} cake={cake}  formatter={formatter}/>;

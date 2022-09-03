@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+
 export default function Cake({ cake, formatter, setItem }) {
-  // const [] = useState([]);
+ 
   useEffect(() => {
     localStorage.setItem('item', '0');
   }, []);
-
-  //  let item = []
 
   const handleClick = () => {
     let itemNumber = Number.parseInt(localStorage.getItem('item'));
@@ -28,11 +27,11 @@ export default function Cake({ cake, formatter, setItem }) {
         <p className='cake-name'>{cake.name}</p>
       </Link>
       <div className='cake-price'>
-        {' '}
         <p>{formatter.format(cake.price)}</p>
       </div>
-      <button className='cake-button' onClick={() => handleClick()}>
-        Carrito
+   
+      <button className='cake-button' onClick={() => handleClick()}> 
+      Añadir Al Carrito
       </button>
     </div>
   );

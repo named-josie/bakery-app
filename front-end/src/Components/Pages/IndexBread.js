@@ -3,11 +3,11 @@ import '../Styles/bread.css'
 
 
 
-export default function IndexBread() {
+export default function IndexBread({setItem}) {
   return (
     <div>
       <h1>Index</h1>
-      <Breads/> 
+      <Breads setItem={setItem}/> 
   </div>
 
   )

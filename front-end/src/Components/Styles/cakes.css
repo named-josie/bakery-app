@@ -1,73 +1,70 @@
 
+.cake-card{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+    border: none;
+    outline: none;
+    color: #7EA3C3;
+    background: #79a0da;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin: 15px;
+    user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 
+}
 
 
 
 .cake-name{
    display: flex;
    flex-wrap: wrap;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 900;
     inline-size: 150px;
     padding-top: 10px;
     padding-left: 20px;
     color: #857AAC;
+    font-family: 'Emilys Candy', cursive;
+    text-decoration: none;
     position: relative;
-    left: 35px; 
-    top: 7px;
-    float: left;
+    left: 5px; 
+    bottom: 10px;
     
 }
+:link {
+    text-decoration: none;
+  }  
 
+.cake-name:visited {
+    color: #71285c;  
+  }  
+   
+.cake-name:hover{
+    color: #DDAEC6;
+       text-decoration-line: underline;
+}
 .cake-price{
     display: flex;
-    font-size: 23px;
-    padding-left: 10px;
-    position: relative;
-    top: 20px;
-    left: 12%;
+    flex-wrap: wrap;
+    margin: auto;
+    inline-size: 75px;
+    font-size: 25px;
+    font-weight: 900;
+     position: relative;
+     bottom: 20%;
+     left: 30%;
     
-}
-
-.cake-name:hover{
-       color: #AD717A;
-
-}
+ }
+ 
 
 .cake-pic{
-    margin: auto;
-    border-radius: 10px;
-    background-color: #857aac47;
-    padding: 2%;
-    box-shadow: 5px 10px #888888;
-    border: 2px solid ;
-    position: relative;
-    left: 35px; 
-    top: 15px;
-       
-}
-
- /* .cake-pic:hover{
-    animation: cake-pic 2s ease infinite;
-}
-
-@keyframes cake-pic {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-30px);}
-    60% {transform: translateY(-15px);}
-}
-     */
-
-div.health{
-    margin-top: 70%;
-   margin-right: 10px;
-    margin-bottom: 10px;
-  
-    width:70px;
-    transform: scale(0.6);
-    position: relative;
-    right: 20%;
-    top: 10px;
+    margin: auto;       
+   
 }
 
 
@@ -82,53 +79,35 @@ div.health{
 
 .title-cakes{
     text-align: center;
-    font-size: 70px;
+    font-size: 100px;
+    font-family: 'Emilys Candy', cursive;
    
 }
 
 
-.back-button{
-    margin: auto;
-    margin-bottom: 2%;
-}
 
 
 .title-cakes{
     padding: 2%;
     text-align: center;
-  
+
 }
 
-/* CSS */
-.cake-button {
-  padding: 0.6em 2em;
-  border: none;
-  outline: none;
-  color: #7EA3C3;
-  background: #F1E2DF;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  font-size: 25px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
 
-.cake-button:before {
+.cake-card:before {
   content: "";
   background: linear-gradient(
     45deg,
     #DBAEC3,
     #d656b8,
-    #7300ff,
+    #4a90c2,
     #93f5f8,
     #7CA5C5,
-    #002bff,
+    #682D5A,
     #7a00ff,
     #ff00c8,
-    #d000ff
+    #d000ff,
+    #C1A7C9
   );
   position: absolute;
   top: -2px;
@@ -139,12 +118,12 @@ div.health{
   -webkit-filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
+  animation: glowing 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
 
-@keyframes glowing-button-85 {
+@keyframes glowing {
   0% {
     background-position: 0 0;
   }
@@ -156,7 +135,7 @@ div.health{
   }
 }
 
-.cake-button:after {
+.cake-card:after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -166,4 +145,53 @@ div.health{
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+
+
+.cake-button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#d481e8, #a195ee 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 20px;
+  font-family: 'Emilys Candy', cursive;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.cake-button:active,
+.cake-button:hover {
+  outline: 0;
+}
+
+.cake-button {
+  background-color: #05062d;
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  transition: 300ms;
+}
+
+.cake-button:hover {
+  background: #000000;
+}
+
+@media (min-width: 768px) {
+  .cake-button {
+    font-size: 24px;
+    min-width: 196px;
+  }
 }
