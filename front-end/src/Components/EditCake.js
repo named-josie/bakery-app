@@ -48,11 +48,11 @@ export default function EditCake() {
 
   return (
     <div className='edit'>
-      <h1 className='title'>Edit Cake Entry</h1>
+      <h1 className='title'>Editar Entrada de La Tarta</h1>
       <form className='form' onSubmit={handleSubmit}>
       <div className='color2'>
         <label className='edit-label' htmlFor='name'>
-          Name
+          Nombre:
         </label>
         <input
           className='text'
@@ -64,7 +64,7 @@ export default function EditCake() {
           onChange={handleTextChange}
         />
         <label className='edit-label' htmlFor='protein'>
-          Price
+        Precio:
         </label>
         <input
           className='text'
@@ -76,7 +76,7 @@ export default function EditCake() {
           onChange={handleTextChange}
         />
         <label className='edit-label' htmlFor='description'>
-        Description
+        Descripción:
         </label>
          <textarea
             rows="5"
@@ -90,7 +90,7 @@ export default function EditCake() {
             required
             />
         <label className='edit-label' htmlFor='image'>
-            Image Url
+           URL Imagen:
           </label>
           <input
             className='text'
@@ -105,7 +105,7 @@ export default function EditCake() {
        
         </div>
         <Link to={`/cakes/${id}`}>
-          <button className='edit-button'>Back</button>
+          <button className='editcake-button'>Back</button>
         </Link>
         
       </form>

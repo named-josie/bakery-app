@@ -6,6 +6,9 @@ const API = process.env.REACT_APP_API_URL;
 
 const formatter = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' });
 
+// const handleCheckboxChange = () => {
+//   setBookmark({ ...bookmark, isFavorite: !bookmark.isFavorite });
+// };
 
 export default function Breads({setItem}) {
   const [breads, setBreads] = useState([]);

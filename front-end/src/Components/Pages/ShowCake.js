@@ -1,11 +1,11 @@
 import React from 'react'
 import CakeDetails from '../CakeDetails'
-
+import '../Styles/showcake.css'
 
 export default function ShowCake() {
   return (
     <div className='shows'>
-   <h1>Shows</h1>
+  
     <CakeDetails/>
   </div>
  

@@ -1,27 +1,11 @@
-import React, { useState } from 'react';
 
-export default function Cart({addItem}) {
-  const [item, setItem] = useState('');
 
-const handleSubmit = (e) => {
-    e.preventDefault();
-    addItem(item);
-    setItem('');
-    removeItem();
-  };
-
-  const addItem = (item) => {
-    setItems([...items, item]);
-  };
-  
-  const removeItem = (itemToBeDeleted) => {
-    setItems(items.filter((item) => itemToBeDeleted !== item));
-  };
+export default function Cart({setItem}) {
 
   return (
     <div className="cart-container">
       <h2>Shopping Cart</h2>
-      {cart.cartItems.length === 0 ? (
+      {cake.setItem.length === 0 ? (
         <div className="cart-empty">
           <p>Your cart is currently empty</p>
           <div className="start-shopping">
@@ -39,29 +23,27 @@ const handleSubmit = (e) => {
             <h3 className="total">Total</h3>
           </div>
           <div className="cart-items">
-            {cart.cartItems &&
-              cart.cartItems.map((cartItem) => (
-                <div className="cart-item" key={cartItem.id}>
+            {setItem.map((cake) => (
+                <div className="cart-item" key={cake.id}>
                   <div className="cart-product">
-                    <img src={cartItem.image} alt={cartItem.name} />
+                    <img src={cake.image} alt={cake.name} />
                     <div>
-                      <h3>{cartItem.name}</h3>
-                      <p>{cartItem.desc}</p>
+                      <h3>{cake.name}</h3>
                       <button onClick={() => handleRemoveFromCart(cartItem)}>
                         Remove
                       </button>
                     </div>
                   </div>
-                  <div className="cart-product-price">${cartItem.price}</div>
+                  <div className="cart-product-price">{cake.price}</div>
                   <div className="cart-product-quantity">
-                    <button onClick={() => handleDecreaseCart(cartItem)}>
+                    <button onClick={() => handleClick(cartItem)}>
                       -
                     </button>
                     <div className="count">{cartItem.cartQuantity}</div>
-                    <button onClick={() => handleAddToCart(cartItem)}>+</button>
+                    <button onClick={() => handleClick(cartItem)}>+</button>
                   </div>
                   <div className="cart-product-total-price">
-                    ${cartItem.price * cartItem.cartQuantity}
+                    {cake.price * cartItem.cartQuantity}
                   </div>
                 </div>
               ))}

@@ -1,10 +1,10 @@
 import React from 'react';
 import EditCake from '../EditCake';
+import '../Styles/editcakes.css'
 
 export default function Edit() {
   return (
     <div>
-      <h1>Edit Cake</h1>
       <EditCake />
     </div>
   );
