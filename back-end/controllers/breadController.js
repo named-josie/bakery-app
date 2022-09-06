@@ -18,7 +18,7 @@ const {
     checkImage,
     checkFavorite,
     checkCapitalization,
-  } = require('../validation/checkproducts');
+  } = require('../validation/checkProducts.js');
 
 //any() coming from the pg promise, first argument is sql command,
 //.any can be used when it is returning all or none

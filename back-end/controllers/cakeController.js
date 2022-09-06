@@ -18,7 +18,7 @@ const {
     checkImage,
     checkFavorite,
     checkCapitalization,
-  } = require('../validation/checkproducts');
+  } = require('../validation/checkProducts');
 
 
 
