@@ -12,6 +12,7 @@ import FourOFour from './Components/Pages/FourOFour';
 import About from './Components/Pages/About'
 import IndexBread from './Components/Pages/IndexBread';
 import IndexCake from './Components/Pages/IndexCake';
+import Menu from './Components/Pages/Menu';
 import {useState} from 'react';
 
 
@@ -28,6 +29,7 @@ export default function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/breads' element={<IndexBread setItem={setItem} />} />
+            <Route path='/menu' element={<Menu />} />
             <Route path='/cakes' element={<IndexCake setItem={setItem}/>} />
             <Route path='/breads/new' element={<New />} />
             <Route path='/cakes/new' element={<NewCakes />} />

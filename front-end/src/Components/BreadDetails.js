@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import gluten from './assets/gluten.png'
+import eggs from './assets/eggs.png'
+import milk from './assets/milk.png'
+import treenuts from './assets/treenuts.png'
+import thc from './assets/thc.png'
+
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -8,6 +14,9 @@ export default function BreadDetails() {
   const [bread, setBreads] = useState([]);
   let { id } = useParams();
   const navigate = useNavigate();
+  
+  const formatter = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2 })
+
 
   useEffect(() => {
     axios
@@ -32,34 +41,43 @@ export default function BreadDetails() {
       });
   };
   return (
-    <div className='show'>
-      <h1 className='show-title'>{bread.name}</h1>
-        <img className='details_image' alt='' src={bread.image}></img>
-        <br></br>
-        <div className='show-info'>
-        <h2 className='show_p'>
-        <span>Name: </span> {bread.name}
+    <div className='bread-show'>
+         <div className='breadinfo'>
+        <h2 className='show_name_bread'>
+         {bread.name}
       </h2>
-      <h2 className='show_p'>
-        <span>Price: </span> {bread.price}
-      </h2>
-      <h2 className='show_p'>
-        <span>Description: </span> {bread.description}
-      </h2>
+      <hr></hr>
+      <h3 className='price-breaddetails'>
+      {formatter.format(bread.price)}
+      </h3>
+      <p className='breadshows_p'>
+        {bread.description}
+      </p>
+      <div>
+      <img className='contains' style={{ width: '275px', height: '255px' }} src={eggs} alt=""></img>
+      <img className='contains' style={{ width: '275px', height: '255px' }} src={gluten} alt=""></img>
+      <img className='contains' 
+      style={{ width: '275px', height: '255px' }}src={milk} alt=""></img>
+      <img className='contains' style={{ width: '275px', height: '255px' }} src={treenuts} alt=""></img>
+      <img className='contains' style={{ width: '275px', height: '255px' }} src={thc} alt=""></img>
       </div>
-      <div className='showNavigation'>
+      </div>
+      <div className='bread-image'>
+      <img className='details_bread' alt='' src={bread.image}></img>
+      </div>
+      <div className='show_navbread'>
         <div>
           <Link to={`/breads`}>
-            <button className='show_button'>Back</button>
+            <button className='bread_show_button'>Back</button>
           </Link>
         </div>
         <div>
           <Link to={`/breads/${bread.id}/edit`}>
-            <button className='show_button'>Edit</button>
+            <button className='bread_show_button'>Edit</button>
           </Link>
         </div>
         <div>
-          <button className='show_button' onClick={handleDelete}>
+          <button className='bread_show_button' onClick={handleDelete}>
             Delete
           </button>
         </div>

@@ -13,7 +13,7 @@ export default function NavBar({item}) {
         </Link>
       </div>
       <p className='navbar'>
-        <Link to='/todo'>Menu</Link>
+        <Link to='/menu'>Menu</Link>
       </p>
       <p className='navbar'>
         <Link to='/breads'>Pan</Link>
@@ -23,7 +23,7 @@ export default function NavBar({item}) {
       </p>
 
       <p className='navbar'>
-        <Link to='/cakes'>About</Link>
+        <Link to='/about'>About</Link>
       </p>
       <h1 className='basket'>
         <RiShoppingBasketLine  /> {item} 

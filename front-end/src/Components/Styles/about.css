@@ -1,0 +1,22 @@
+.about{
+    margin-top: 2%;
+    margin: auto;
+    width: 90%;
+    padding-bottom: 20%;
+}
+
+
+
+.about-title{
+    padding-top: 2%;
+    text-align: center;
+    font-family: 'Emilys Candy', cursive;
+    color: #BDA7C7;
+    font-size: 70px;
+}
+
+.para{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #7BA3BE;
+}

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect} from "react";
 
 
-export default function Bread({ bread , formatter, setItem }) {
+export default function Bread({ bread, formatter, setItem }) {
   
   useEffect(() => {
     localStorage.setItem('item', '0');
@@ -15,9 +15,7 @@ export default function Bread({ bread , formatter, setItem }) {
     localStorage.setItem('item', itemNum);
     setItem(itemNum);
   };
-  // const handleCheckboxChange = () => {
-  //   setBread({ ...bread, isFavorite: !bread.isFavorite });
-  // };
+ 
   return (
     <div className='bread-card'>
       

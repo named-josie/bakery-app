@@ -1,10 +1,10 @@
 -- localhost
-DROP DATABASE IF EXISTS dev_products;
+DROP DATABASE IF EXISTS dev_bakery;
 -- Creating the database 
-CREATE DATABASE dev_products;
+CREATE DATABASE dev_bakery;
 
 -- Connect 
-\c  dev_products;
+\c  dev_bakery;
 
 
 DROP TABLE IF EXISTS breads;

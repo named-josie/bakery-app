@@ -1,6 +1,6 @@
 import React from 'react'
 import CakeDetails from '../CakeDetails'
-import '../Styles/showcake.css'
+import "../Styles/cakeshow.css"
 
 export default function ShowCake() {
   return (

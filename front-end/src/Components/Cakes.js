@@ -7,7 +7,7 @@ const API = process.env.REACT_APP_API_URL;
 
 const formatter = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2 })
 
-
+ 
 
 export default function Cakes({setItem}) {
   const [cakes, setCakes] = useState([]);
@@ -21,7 +21,10 @@ export default function Cakes({setItem}) {
         console.log(err);
       });
   }, [cakes]);
-
+ 
+//  const handleCheckbox = () => {
+//     setCakes({ ...cakes, isFavorite: !cakes.isFavorite });
+//    };  
 
   return (
     <div className='cakes'>

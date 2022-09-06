@@ -1,6 +1,6 @@
 import React from 'react'
 import BreadDetails from '../BreadDetails'
-
+import '../Styles/breadshow.css'
 
 
 export default function Show() {

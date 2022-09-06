@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 // import Favorite from './Favorite'
-export default function Cake({cake, formatter, setItem }) {
+export default function Mini({mini, formatter, setItem }) {
  
  
  
@@ -10,15 +10,6 @@ export default function Cake({cake, formatter, setItem }) {
   useEffect(() => {
     localStorage.setItem('item', '0');
   }, []);
-
-  // const [cake , setCake] = useState({
-  //   is_favorite: cake.is_favorite
-  // })
-
-
-  // const handleCheckbox = () => {
-  //   setCake({ ...cake, isFavorite: !cake.isFavorite });
-  // };
 
 
   const handleClick = () => {
@@ -30,34 +21,33 @@ export default function Cake({cake, formatter, setItem }) {
   };
 
   return (
-    <div className='cake-card'>
-      <Link to={`/cakes/` + cake.id} key={cake.id}>
+    <div className='mini-card'>
+      <Link to={`/minis/` + mini.id} key={mini.id}>
         <img
-          className='cake-pic'
+          className='mini-pic'
           style={{ width: '275px', height: '255px' }}
-          src={cake.image}
+          src={mini.image}
           alt=''
         />
-        {/* <Favorite className='favorite'  cake={cake} /> */}
         
         <h1 className='favorite'
           id='is_favorite'
           type='checkbox'
           onClick={handleClick}
         >
-          {cake.is_favorite ? (
+          {mini.is_favorite ? (
             <span>❤️</span>
           ) : (
             <span>❤️</span>
           )}
         </h1>
-        <p className='cake-name'>{cake.name}</p>
+        <p className='mini-name'>{mini.name}</p>
       </Link>
-      <div className='cake-price'>
-        <p>{formatter.format(cake.price)}</p>
+      <div className='mini-price'>
+        <p>{formatter.format(mini.price)}</p>
       </div>
 
-      <button className='cake-button' onClick={() => handleClick()}>
+      <button className='mini-button' onClick={() => handleClick()}>
         Añadir Al Carrito
       </button>
     </div>

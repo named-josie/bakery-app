@@ -1,3 +1,161 @@
-.hours{
-    height: 600px;
+.home{
+    width: 90%;
+    margin: auto;
+  
 }
+
+.homedays{
+height: 700px;
+border-radius: 2%;
+}
+
+.hours{
+  margin-right: 30px;  
+  padding: 1em 2em;
+    border: none;
+    outline: none;
+    color: #7EA3C3;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  float: left;
+}
+.hours:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #DBAEC3,
+      #d656b8,
+      #4a90c2,
+      #93f5f8,
+      #7CA5C5,
+      #682D5A,
+      #7a00ff,
+      #ff00c8,
+      #d000ff,
+      #C1A7C9
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .hours:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #F1E2DE;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+
+
+
+
+.welcome{
+    padding-top: 2%;
+    text-align: center;
+    font-family: 'Emilys Candy', cursive;
+    color: #BDA7C7;
+    font-size: 70px;
+
+}
+
+.rosette{
+    /* height: 600px; */
+    border-radius: 2%;
+}
+
+
+.rosecake{
+   
+    padding: 1em 2em;
+    border: none;
+    outline: none;
+    color: #7EA3C3;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  float: left;
+}
+.rosecake:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #DBAEC3,
+      #d656b8,
+      #4a90c2,
+      #93f5f8,
+      #7CA5C5,
+      #682D5A,
+      #7a00ff,
+      #ff00c8,
+      #d000ff,
+      #C1A7C9
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .rosecake:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #F1E2DE;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }

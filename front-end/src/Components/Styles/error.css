@@ -1,0 +1,22 @@
+.error1{
+    margin-top: 2%;
+    margin: auto;
+    width: 90%;
+    padding-bottom: 20%;
+}
+.error {
+    height: 500px;
+    float: left;
+}
+.error-title{
+   padding-top: 2%;
+    font-size: 80px;
+}   
+
+
+.p-error{
+    margin-left: 45%;
+    font-size: 40px;
+   
+}
+

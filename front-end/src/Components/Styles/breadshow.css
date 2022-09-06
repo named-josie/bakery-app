@@ -1,7 +1,7 @@
 
 
- .shows {
-    width: 90%;
+ .breadshows {
+   width: 90%;
     margin: auto;
     margin-top: 3%;
     border-radius: 5px;
@@ -10,19 +10,18 @@
 } 
 
 
-  .show_p{
+  .breadshows_p{
     padding-left: 10px;
     font-size: 25px; 
     
   } 
 
 
-.cake-show {
+.bread-show {
     display: flex;
-   
-
 }
-.cake-image { 
+
+.bread-image { 
     padding: 1em 2em;
     border: none;
     outline: none;
@@ -35,7 +34,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-.cakeinfo{
+.breadinfo{
     padding: 1em 2em;
     border: none;
     outline: none;
@@ -48,7 +47,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-.cakeinfo:before {
+.breadinfo:before {
     content: "";
     background: linear-gradient(
       45deg,
@@ -88,7 +87,7 @@
     }
   }
 
-  .cakeinfo:after {
+  .breadinfo:after {
     z-index: -1;
     content: "";
     position: absolute;
@@ -98,11 +97,10 @@
     left: 0;
     top: 0;
     border-radius: 10px;
-  }
-  
+  } 
  
-
-.cake-image:before {
+ 
+.bread-image:before {
     content: "";
     background: linear-gradient(
       45deg,
@@ -131,7 +129,7 @@
     border-radius: 10px;
   }
 
-  .cake-image:after {
+  .bread-image:after {
     z-index: -1;
     content: "";
     position: absolute;
@@ -142,31 +140,17 @@
     top: 0;
     border-radius: 10px;
   }
-.details_cake{
+.details_bread{
     height: 400px;
     width: 420px;
-}
-
-
-/* 
-:link {
-    color: #E1DCCA;
-    text-decoration: none;
-  }  
-    
-
-:hover {
-    color: #E1DCCA;
-    text-decoration: underline;
-  } */
-
+} 
 
 
 
 
 
   
-.showNavigation{
+.show_navbread{
 display: flex;
 flex-direction: column;
 padding: 2%;
@@ -175,7 +159,7 @@ padding: 2%;
   
   
   
-  .cake_show_button{
+  .bread_show_button{
     align-items: center;
     background-image: linear-gradient(144deg,#d481e8, #a195ee 50%,#00DDEB);
     border: 0;
@@ -200,12 +184,12 @@ padding: 2%;
     cursor: pointer;
   }
   
-  .cake_show_button:active,
-  .cake_show_button:hover {
+  .bread_show_button:active,
+  .bread_show_button:hover {
     outline: 0;
   }
   
-.cake_show_button {
+.bread_show_button {
     background-color: #05062d;  
     padding: 16px 24px;
     border-radius: 6px;
@@ -213,19 +197,19 @@ padding: 2%;
     transition: 300ms;
   }
   
-  .cake_show_button:hover {
+  .bread_show_button:hover {
     background: #000000;
     color: #DDAEC6;
   }
   
   @media (min-width: 768px) {
-    .cake_show_button {
+    .bread_show_button {
       font-size: 24px;
       min-width: 196px;
     }
   }  
 
-  .cake_show_button:visited {
+  .bread_show_button:visited {
     color: #71285c;
   }
 
@@ -238,13 +222,36 @@ padding: 2%;
     margin: -80px;
   }
 
-  .price-details{
+  .price-breaddetails{
     font-size: 35px;
     padding-left: 10px;
     color: #000000;
   }
-  .show_name{
+  .show_name_bread{
     font-size: 40px;
     padding-left: 10px;
     color: #DCB0C5;
   }
+
+  hr {
+    filter: blur(1px);  
+    width: 100%;
+      height: 1px;
+      background-repeat:repeat-x;
+      background: linear-gradient(to right, 
+      #ff9ac9,
+      #d516a8,
+      #682D5A,
+      #7a00ff,
+      #ff00c8,
+      #d000ff,
+      #f5d3ff
+       );
+      animation: rainbow 10s linear infinite;
+      background-size: 200% 100% !important;
+      }
+    @keyframes rainbow{
+      0% {background-position: 0;}
+      100% {background-position: 800% 0;}
+      }
+   
