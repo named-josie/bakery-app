@@ -16,7 +16,13 @@
 }
 
 .para{
+   
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     color: #7BA3BE;
+}
+
+.space{
+   position: relative;
+   top: 20%;
 }

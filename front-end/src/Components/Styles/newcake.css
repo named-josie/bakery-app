@@ -1,0 +1,116 @@
+.new{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    border-radius: 2%;
+  }
+
+/* .new-list{
+font-size: 30px;
+font-weight: 900;
+display: flex;
+flex-direction: column;
+float: left;
+padding: 10%;
+
+} */
+/* .form{
+    padding: 10%;
+} */
+
+.color1{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 2em;
+        border: none;
+        outline: none;
+        color: #7EA3C3;
+        background: #79a0da;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        margin: 15px;
+        user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+}
+
+.color1:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #DBAEC3,
+      #d656b8,
+      #4a90c2,
+      #93f5f8,
+      #7CA5C5,
+      #682D5A,
+      #7a00ff,
+      #ff00c8,
+      #d000ff,
+      #C1A7C9
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    }
+    
+    @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+    }
+    
+    .color1:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #F1E2DE;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    }
+
+
+.text{
+    color: #1c3c3e;
+  }
+
+  .new-label1{
+        display: flex;
+        padding-top: 2%;
+        font-size: 30px;
+        font-family: 'Emilys Candy', cursive;
+        }
+
+
+
+.new-label{
+  color: #1D3C3D;
+font-size: larger;
+}
+
+.text{
+    color: #1D3C3D;
+}
+
+

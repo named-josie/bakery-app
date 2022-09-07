@@ -1,6 +1,6 @@
 import React from 'react'
 import NewCake from '../NewCake'
-
+import '../Styles/newcake.css'
 
 export default function NewCakes() {
   return (

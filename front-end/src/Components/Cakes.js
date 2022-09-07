@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Cake from './Cake';
 import axios from 'axios';
-
+import { Link } from 'react-router-dom';
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -35,7 +35,11 @@ export default function Cakes({setItem}) {
         })}
       </section>
       <br />
-     
+      <div>
+      <Link to={`/cakes/new`}>
+            <button className='button-breads'>New</button>
+          </Link>
+          </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Bread from './Bread';
 import axios from 'axios';
 
@@ -25,14 +26,17 @@ export default function Breads({setItem}) {
 
   return (
     <div className='breads'>
-      {/* <h1 className='title-breads'>Tartas</h1> */}
       <section className='all-breads'>
         {breads?.map((bread) => {
           return <Bread key={bread.id} setItem={setItem} bread={bread} formatter={formatter}/>;
         })}
       </section>
       <br />
-     
+      <div>
+      <Link to={`/breads/new`}>
+            <button className='button-breads'>New</button>
+          </Link>
+          </div>
     </div>
   );
 }
