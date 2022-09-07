@@ -16,14 +16,14 @@ color: #BDA7C7;
 }
 
 .para{
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Roboto', sans-serif;
     color: #7BA3BE;
 }
 
 
 .logoloco{
-transform: scale(.6);
+transform: scale(.5);
 padding-top: 5%;
 display: block;
 margin-left: auto;

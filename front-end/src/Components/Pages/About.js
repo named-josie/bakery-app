@@ -24,7 +24,7 @@ export default function About() {
         <div className='rosecake'>
           <img
             className='rosette'
-            style={{ width: '800px', height: '700px' }}
+            style={{ width: '600px', height: '600px' }}
             src='http://blendconcepts.com/wp-content/uploads/2016/04/Pan_y_Pasteles_Madrid-2.jpg'
             alt='c'
           ></img>
