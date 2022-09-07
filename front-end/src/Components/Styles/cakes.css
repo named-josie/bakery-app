@@ -420,3 +420,10 @@ svg #parent-circle {
     transform: scale(1);
   }
 }
+
+.star-ratings{
+  display: flex;
+  transform: scale(1);
+  position: relative;
+  bottom: 40px;
+  }

@@ -22,7 +22,7 @@ export default function Mini({ mini, formatter, setItem, onClick, height, width 
       <Link to={`/minis/` + mini.id} key={mini.id}>
         <img
           className='mini-pic'
-          style={{ width: '275px', height: '255px' }}
+          style={{ width: '175px', height: '150px' }}
           src={mini.image}
           alt=''
         />
