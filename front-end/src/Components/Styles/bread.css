@@ -84,7 +84,7 @@ touch-action: manipulation;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2%;
+  padding-top: 10%;
 }
 
 .title-breads{
@@ -205,4 +205,23 @@ color: #DDAEC6;
   font-size: 18px;
   min-width: 196px;
 }
+}
+
+.stars{
+  display: flex;
+ 
+  padding-bottom: 2px;
+  margin-left: 20%;
+  margin-right: 30%;
+  transform: scale(2);
+  position: relative;
+  bottom: 9%;
+
+
+}
+.star-ratings{
+display: flex;
+transform: scale(1.5);
+position: relative;
+bottom: 40px;
 }

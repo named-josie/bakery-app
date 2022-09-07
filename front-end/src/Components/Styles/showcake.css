@@ -1,5 +1,6 @@
 
- .show {
+
+ .shows {
     width: 90%;
     margin: auto;
     margin-top: 3%;
@@ -18,7 +19,7 @@
 
 .cake-show {
     display: flex;
-   padding-top: 10%;
+   
 
 }
 .cake-image { 
@@ -141,11 +142,28 @@
     top: 0;
     border-radius: 10px;
   }
-
 .details_cake{
     height: 400px;
     width: 420px;
 }
+
+
+/* 
+:link {
+    color: #E1DCCA;
+    text-decoration: none;
+  }  
+    
+
+:hover {
+    color: #E1DCCA;
+    text-decoration: underline;
+  } */
+
+
+
+
+
 
   
 .showNavigation{

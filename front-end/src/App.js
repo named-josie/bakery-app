@@ -17,19 +17,21 @@ import {useState} from 'react';
 
 
 
+
 export default function App() {
   const [item, setItem] = useState(0);
-
+  
 
   return (
     <div className='App'>
       <Router>
         <NavBar item={item} />
+       
         <main>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/breads' element={<IndexBread setItem={setItem} />} />
-            <Route path='/menu' element={<Menu />} />
+            <Route path='/menu' element={<Menu setItem={setItem} />} />
             <Route path='/cakes' element={<IndexCake setItem={setItem}/>} />
             <Route path='/breads/new' element={<New />} />
             <Route path='/cakes/new' element={<NewCakes />} />

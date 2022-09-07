@@ -1,24 +1,16 @@
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
-// import Favorite from './Favorite'
+import { useEffect, useState } from 'react';
+import StarRating from 'star-rating-react';
+
 export default function Cake({cake, formatter, setItem }) {
  
- 
+  const [star, setStar] = useState(0)
  
  
  
   useEffect(() => {
     localStorage.setItem('item', '0');
   }, []);
-
-  // const [cake , setCake] = useState({
-  //   is_favorite: cake.is_favorite
-  // })
-
-
-  // const handleCheckbox = () => {
-  //   setCake({ ...cake, isFavorite: !cake.isFavorite });
-  // };
 
 
   const handleClick = () => {
@@ -56,7 +48,12 @@ export default function Cake({cake, formatter, setItem }) {
       <div className='cake-price'>
         <p>{formatter.format(cake.price)}</p>
       </div>
-
+      <div className="star-ratings">
+      <StarRating 
+  size={5}
+  value={star}
+  onChange={function(val){setStar(val)}}
+/></div>
       <button className='cake-button' onClick={() => handleClick()}>
         Añadir Al Carrito
       </button>

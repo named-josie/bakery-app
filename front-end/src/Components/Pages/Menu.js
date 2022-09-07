@@ -11,7 +11,9 @@ export default function Menu({setItem}) {
     <div>
       <h1 className='menu-title' >Menu</h1>
       <Minis setItem={setItem}/>
+      <hr></hr>
       <Cakes setItem={setItem}/>
+      <hr></hr>
       <Breads setItem={setItem}/> 
     
   </div>

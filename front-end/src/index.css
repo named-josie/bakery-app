@@ -7,3 +7,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.menu-title {
+  padding-top: 2%;
+  text-align: center;
+}
+
+:visited {
+  color: #71285c;  
+}  

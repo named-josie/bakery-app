@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
-// import Favorite from './Favorite'
+import { useEffect, useState } from 'react';
+import StarRating from 'star-rating-react';
+
 export default function Mini({mini, formatter, setItem }) {
  
+  const [star, setStar] = useState(0)
  
  
  
@@ -46,7 +48,12 @@ export default function Mini({mini, formatter, setItem }) {
       <div className='mini-price'>
         <p>{formatter.format(mini.price)}</p>
       </div>
-
+      <div className="star-ratings">
+      <StarRating 
+  size={5}
+  value={star}
+  onChange={function(val){setStar(val)}}
+/></div>
       <button className='mini-button' onClick={() => handleClick()}>
         Añadir Al Carrito
       </button>

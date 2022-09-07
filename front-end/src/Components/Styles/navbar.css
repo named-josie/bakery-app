@@ -6,6 +6,10 @@ nav {
     box-shadow: 2px 2px 4px grey;
     margin-bottom: 1em;
     font-family: 'Sacramento', cursive; 
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
   }
 
   .nav-image{

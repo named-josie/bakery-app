@@ -19,6 +19,7 @@
 
 .bread-show {
     display: flex;
+    padding-top: 10%;
 }
 
 .bread-image { 
