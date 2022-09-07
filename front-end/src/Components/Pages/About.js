@@ -15,7 +15,7 @@ export default function About() {
       <div className='hours'>
           <img
             className='homedays'
-            style={{ width: '400px', height: '600px' }}
+            style={{ width: '300px', height: '500px' }}
             src={hour2}
             alt='d'
           ></img>
@@ -24,7 +24,7 @@ export default function About() {
         <div className='rosecake'>
           <img
             className='rosette'
-            style={{ width: '600px', height: '600px' }}
+            style={{ width: '600px', height: '500px' }}
             src='http://blendconcepts.com/wp-content/uploads/2016/04/Pan_y_Pasteles_Madrid-2.jpg'
             alt='c'
           ></img>
