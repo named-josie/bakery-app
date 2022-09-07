@@ -9,13 +9,13 @@ export default function Home() {
       <div id='container'>
         
         <div class='photobanner'>
-          <img class='first' src='https://panypasteles.com/wp-content/uploads/2020/09/carrito-pasteltiso.jpg' alt='' />
-          <img src='https://bonifaciobakery.netlify.app/images/KitKat_cake.png' alt='' />
-          <img src='https://bonifaciobakery.netlify.app/images/redVelvetCAKE.png' alt='' />
-          <img src='https://bonifaciobakery.netlify.app/images/mil.png' alt='' />
-          <img src='https://bonifaciobakery.netlify.app/images/frambu-mouse-portada.png' alt='' />
-          <img src='https://bonifaciobakery.netlify.app/images/tarta-americana.png' alt='' />
-          <img src='https://panypasteles.com/wp-content/uploads/2020/10/desayunos-centro.jpg' alt='' />
+          <img class='first'  style={{ width: '675px', height: '655px' }} src='https://bonifaciobakery.netlify.app/images/carrotcake.png' alt='' />
+          <img style={{ width: '675px', height: '655px' }}  src='https://bonifaciobakery.netlify.app/images/KitKat_Cake.png' alt='' />
+          <img style={{ width: '675px', height: '655px' }}  src='https://bonifaciobakery.netlify.app/images/oreocake.png' alt='' />
+          <img style={{ width: '675px', height: '655px' }}  src='https://bonifaciobakery.netlify.app/images/redvelvet.png' alt='' />
+          <img style={{ width: '675px', height: '655px' }}  src='https://bonifaciobakery.netlify.app/images/mil.png' alt='' />
+          <img style={{ width: '675px', height: '655px' }}  src='https://bonifaciobakery.netlify.app/images/frambu-mouse-portada.png' alt='' />
+          <img style={{ width: '675px', height: '655px' }}  src='https://bonifaciobakery.netlify.app/images/leche.png' alt='' />
         </div>
       </div>
       <div className='home'>
