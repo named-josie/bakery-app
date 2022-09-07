@@ -26,7 +26,7 @@ export default function Cake({cake, formatter, setItem, height, width, onClick }
       <Link to={`/cakes/` + cake.id} key={cake.id}>
         <img
           className='cake-pic'
-          style={{ width: '275px', height: '255px' }}
+          style={{ width: '175px', height: '150px' }}
           src={cake.image}
           alt=''
         />

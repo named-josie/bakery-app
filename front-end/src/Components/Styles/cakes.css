@@ -22,7 +22,7 @@
 .cake-name{
    display: flex;
    flex-wrap: wrap;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
     inline-size: 150px;
     padding-top: 10px;
@@ -31,7 +31,7 @@
     font-family: 'Emilys Candy', cursive;
     text-decoration: none;
     position: relative;
-    left: 5px; 
+    right: 23px; 
     bottom: 10px;
     
 }
@@ -52,11 +52,11 @@
     flex-wrap: wrap;
     margin: auto;
     inline-size: 75px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
      position: relative;
      bottom: 20%;
-     left: 30%;
+     left: 33%;
     
  }
  
@@ -67,7 +67,7 @@
 }
 .favorite {
     float: right;
-    transform: scale(1.5);
+    transform: scale(1);
     margin-left: 5px;
 }
 
@@ -208,12 +208,12 @@ svg {
   width: 65px;
   margin-left: -20px;
   position: relative;
-  left: 21px;
-  bottom: 53%;
+  left: 22px;
+  bottom: 40%;
 }
 svg #heart {
   transform-origin: center;
-  animation: animateHeartOut 0.3s linear forwards;
+  animation: animateHeartOut 0.5s linear forwards;
 }
 svg #parent-circle {
   transform-origin: 29.5px 29.5px;

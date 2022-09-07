@@ -40,7 +40,7 @@ export default function Bread({ bread, formatter, setItem, height, width, onClic
       </input> */}
      
         <img className='bread-pic'
-          style={{ width: '275px', height: '255px' }}
+          style={{ width: '175px', height: '150px' }}
           src={bread.image}
           alt=''
         />
