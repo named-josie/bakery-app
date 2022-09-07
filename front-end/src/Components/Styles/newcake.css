@@ -6,19 +6,6 @@
     border-radius: 2%;
   }
 
-/* .new-list{
-font-size: 30px;
-font-weight: 900;
-display: flex;
-flex-direction: column;
-float: left;
-padding: 10%;
-
-} */
-/* .form{
-    padding: 10%;
-} */
-
 .color1{
         display: flex;
         flex-direction: column;
@@ -91,9 +78,7 @@ padding: 10%;
     }
 
 
-.text{
-    color: #1c3c3e;
-  }
+
 
   .new-label1{
         display: flex;
@@ -104,13 +89,9 @@ padding: 10%;
 
 
 
-.new-label{
-  color: #1D3C3D;
-font-size: larger;
+
+
+
+.favor {
+transform: scale(2);
 }
-
-.text{
-    color: #1D3C3D;
-}
-
-

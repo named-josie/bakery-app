@@ -11,11 +11,17 @@ export default function NewCake() {
     price: 0,
     description: '',
     image: '',
+    is_favorite: false,
   });
 
   const handleTextChange = (event) => {
     setCake({ ...cake, [event.target.id]: event.target.value });
   };
+
+  const handleCheckboxChange = () => {
+    setCake({ ...cake, is_favorite: !cake.is_favorite});
+  };
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -73,7 +79,7 @@ export default function NewCake() {
             required
             />
           <label className='new-label1' htmlFor='image'>
-            Image Url
+            Imagen
           </label>
           <input
             className='text'
@@ -84,8 +90,16 @@ export default function NewCake() {
             value={cake.image}
             onChange={handleTextChange}
           />
-          <br />
+          <label htmlFor="isFavorite">Favorite:</label>
+        <input
+          id="isFavorite"
+          type="checkbox"
+          className='favor'
+          onChange={handleCheckboxChange}
+          checked={cake.is_favorite}
+        />
           <input className='button' type='submit' />
+        
         </div>
       </form>
     </div>

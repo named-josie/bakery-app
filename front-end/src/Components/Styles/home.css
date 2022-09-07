@@ -75,12 +75,17 @@ border-radius: 2%;
     border-radius: 10px;
   }
 
-
+.home-pic{
+ padding-top: 9%;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ transform: scale(2);
+}
 
 
 
 .welcome{
-    padding-top: 10%;
     text-align: center;
     font-family: 'Emilys Candy', cursive;
     color: #BDA7C7;
@@ -91,6 +96,7 @@ border-radius: 2%;
 .rosette{
     /* height: 600px; */
     border-radius: 2%;
+   
 }
 
 
@@ -107,6 +113,7 @@ border-radius: 2%;
   -webkit-user-select: none;
   touch-action: manipulation;
   float: left;
+  margin-bottom: 20px;
 }
 .rosecake:before {
     content: "";
@@ -206,5 +213,5 @@ border-radius: 2%;
   .slide.active {
     opacity: 1;
     transition-duration: 2s;
-    transform: scale(1.20);
+    transform: scale(1.2);
   }

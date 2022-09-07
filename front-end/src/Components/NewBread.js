@@ -11,10 +11,14 @@ export default function NewBread() {
     price: 0,
     description: '',
     image: '',
+    is_favorite: false,
   });
 
   const handleTextChange = (event) => {
     setBread({ ...bread, [event.target.id]: event.target.value });
+  };
+  const handleCheckboxChange = () => {
+    setBread({ ...bread, is_favorite: !bread.is_favorite});
   };
 
   const handleSubmit = (event) => {
@@ -87,6 +91,14 @@ export default function NewBread() {
             value={bread.image}
             onChange={handleTextChange}
           />
+          <label htmlFor="isFavorite">Favorite:</label>
+        <input
+          id="isFavorite"
+          type="checkbox"
+          className='favor'
+          onChange={handleCheckboxChange}
+          checked={bread.is_favorite}
+        />
           <br />
           <input className='button' type='submit' />
         </div>
