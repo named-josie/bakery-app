@@ -54,16 +54,16 @@ export default function CakeDetails() {
         {cake.description}
       </p>
       <div>
-      <img className='contains' style={{ width: '275px', height: '255px' }} src={eggs} alt=""></img>
-      <img className='contains' style={{ width: '275px', height: '255px' }} src={gluten} alt=""></img>
+      <img className='contains' style={{ width: '175px', height: '165px' }} src={eggs} alt=""></img>
+      <img className='contains'  style={{ width: '175px', height: '165px' }} src={gluten} alt=""></img>
       <img className='contains' 
-      style={{ width: '275px', height: '255px' }}src={milk} alt=""></img>
-      <img className='contains' style={{ width: '275px', height: '255px' }} src={treenuts} alt=""></img>
-      <img className='contains' style={{ width: '275px', height: '255px' }} src={thc} alt=""></img>
+       style={{ width: '175px', height: '165px' }} src={milk} alt=""></img>
+      <img className='contains' s style={{ width: '175px', height: '165px' }} src={treenuts} alt=""></img>
+      <img className='contains'  style={{ width: '175px', height: '165px' }} src={thc} alt=""></img>
       </div>
       </div>
       <div className='cake-image'>
-      <img className='details_cake' alt='' src={cake.image}></img>
+      <img className='details_cake' alt=''  style={{ width: '365px', height: '375px' }} src={cake.image}></img>
       </div>
       <div className='showNavigation'>
         <div>

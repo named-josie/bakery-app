@@ -60,11 +60,8 @@ npm run db:seed
 
 nodemon server.js
 
-# Home Page:
-# Index Pages:
+# Screenshots
 
-# Show Pages:
+## Acknowledgments
 
-# Edit Page:
-
-
+Much gratitude goes towards Juhao Chen and Jonathan Scheiber all the support and help truly grateful for your words and time.

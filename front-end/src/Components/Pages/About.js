@@ -2,6 +2,11 @@ import React from 'react'
 import '../Styles/about.css'
 import hour2 from '../assets/hours2.png';
 import logo from '../assets/logo.png'
+import LILogo from '../assets/LILogo.png'
+import GitHubMark64 from '../assets/GitHubMark64.png'
+
+
+
 export default function About() {
   return (
     <div className='about'>
@@ -20,7 +25,6 @@ export default function About() {
             alt='d'
           ></img>
         </div>
-
         <div className='rosecake'>
           <img
             className='rosette'
@@ -30,6 +34,39 @@ export default function About() {
           ></img>
         </div>
         <br></br>
+        <div>
+          <div className="border">
+          <img
+            className="profile"
+            src="https://avatars.githubusercontent.com/u/96319104?v=4"
+            alt="Josie"
+          />
+          </div>
+      
+          <h3 className="name">Jossy Pascasio</h3>
+          <p className="bio">
+            I am a Full Stack Software Engineer in the NYC with a Bachelor/'s
+            Degree and 6+ years professional experience in Business
+            Administration. I am a naturally curious person which makes me want
+            to always learn new things, a problem-solver who questions
+            everything, and a hard worker who doesn't take life too seriously
+            and enjoys the little small things in life like pizza.🍕
+          </p>
+          <div className="links">
+            <a className="github" href="https://github.com/named-josie">
+            <img align="center"alt="" src={GitHubMark64}></img>
+            </a>
+            <a className="github" href="https://www.linkedin.com/in/joss-pascasio/" target="blank">
+              <img
+                align="center"
+                src={LILogo}
+                alt="https://www.linkedin.com/in/joss-pascasio/"
+                height="50"
+              />
+            </a>
+            </div>
+       
+            </div>
 
         
     </div>

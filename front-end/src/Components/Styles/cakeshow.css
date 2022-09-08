@@ -11,7 +11,7 @@
 
   .show_p{
     padding-left: 10px;
-    font-size: 25px; 
+    font-size: 20px; 
     
   } 
 
@@ -213,11 +213,11 @@ padding: 2%;
 
   .contains {
  
-    transform: scale(.29);
+    transform: scale(.4);
     display: flex;
     float: left;
     position: relative;
-    margin: -80px;
+    margin: 0px;
   }
 
   .price-details{
