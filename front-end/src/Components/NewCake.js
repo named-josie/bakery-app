@@ -37,17 +37,17 @@ export default function NewCake() {
 
   return (
     <div className='new'>
-      <h1 className='title'>New Entry</h1>
+      <h1 className='title'>Neuva Entrada</h1>
       <form onSubmit={handleSubmit}>
         <div className='color1'>
           <label className='new-label1' htmlFor='name'>
-            Name
+            Nombre
           </label>
           <input
             className='text'
             id='name'
             type='text'
-            placeholder='Name Of Cake'
+            placeholder='Nombre de tarta'
             required
             value={cake.name}
             onChange={handleTextChange}

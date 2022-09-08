@@ -6,7 +6,7 @@ import { RiShoppingBasketLine } from 'react-icons/ri';
 export default function NavBar({item}) {
  
   return (
-    <nav>
+    <nav className='navbar'>
       <div>
         <Link to='/'>
           <img className='nav-image' src={logo3} alt=''></img>
@@ -28,6 +28,9 @@ export default function NavBar({item}) {
       <h1 className='basket'>
         <RiShoppingBasketLine  /> {item} 
       </h1>
+      <a href="javascript:void(0);" className="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
     </nav>
   );
 }

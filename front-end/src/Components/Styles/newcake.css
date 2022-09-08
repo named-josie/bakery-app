@@ -1,6 +1,6 @@
 .new{
     text-align: center;
-    width: 90%;
+    width: 70%;
     margin: auto;
     font-size: 25px;
     border-radius: 2%;
@@ -83,13 +83,9 @@
   .new-label1{
         display: flex;
         padding-top: 2%;
-        font-size: 30px;
+        font-size: 25px;
         font-family: 'Emilys Candy', cursive;
         }
-
-
-
-
 
 
 .favor {

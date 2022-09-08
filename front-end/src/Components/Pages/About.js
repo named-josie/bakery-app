@@ -48,7 +48,7 @@ export default function About() {
       
           <h3 className="name">Jossy Pascasio</h3>
           <p className='bio'>
-            I am a Full Stack Software Engineer in the NYC with a Bachelor/'s
+            I am a Full Stack Software Engineer in the NYC with a Bachelor's
             Degree and 6+ years professional experience in Business
             Administration. I am a naturally curious person which makes me want
             to always learn new things, a problem-solver who questions
