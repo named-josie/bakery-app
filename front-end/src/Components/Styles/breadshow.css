@@ -207,19 +207,15 @@ padding: 2%;
   color: #71285c;
 }
 
-.containing {
-display: flex;
-flex-direction: row;
-}
 
 .contains-bread {
   transform: scale(.5);
   display: flex;
-  padding-top: 100px; 
-  padding-bottom: 20px;
+  float: left;
+
 }
 
-.price-details{
+.price-breaddetail{
   font-size: 26px;
   padding-left: 10px;
   color: #000000;
