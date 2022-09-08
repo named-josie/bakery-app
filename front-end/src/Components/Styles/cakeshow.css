@@ -10,6 +10,7 @@
 
 
   .show_p{
+    display: flex;
     padding-left: 10px;
     font-size: 20px; 
     
@@ -142,10 +143,6 @@
     border-radius: 10px;
   }
 
-.details_cake{
-    height: 400px;
-    width: 420px;
-}
 
   
 .showNavigation{
@@ -191,7 +188,6 @@ padding: 2%;
     background-color: #05062d;  
     padding: 16px 24px;
     border-radius: 6px;
-    width: 100%;
     transition: 300ms;
   }
   
@@ -202,7 +198,7 @@ padding: 2%;
   
   @media (min-width: 768px) {
     .cake_show_button {
-      font-size: 24px;
+      font-size: 18px;
       min-width: 196px;
     }
   }  
@@ -213,20 +209,19 @@ padding: 2%;
 
   .contains {
  
-    transform: scale(.4);
+    transform: scale(.3);
     display: flex;
     float: left;
-    position: relative;
-    margin: 0px;
+   margin: auto;
   }
 
   .price-details{
-    font-size: 35px;
+    font-size: 26px;
     padding-left: 10px;
     color: #000000;
   }
   .show_name{
-    font-size: 40px;
+    font-size: 30px;
     padding-left: 10px;
     color: #DCB0C5;
   }

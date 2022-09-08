@@ -63,7 +63,7 @@ export default function CakeDetails() {
       </div>
       </div>
       <div className='cake-image'>
-      <img className='details_cake' alt=''  style={{ width: '365px', height: '375px' }} src={cake.image}></img>
+      <img className='details_cake' alt=''  style={{ width: '300px', height: '300px' }} src={cake.image}></img>
       </div>
       <div className='showNavigation'>
         <div>
