@@ -207,9 +207,7 @@ padding: 2%;
     color: #71285c;
   }
 
- .containing{
-  display: flex;
- }
+ 
 
 
   .contains {
@@ -217,6 +215,9 @@ padding: 2%;
     display: flex;
     float: left;
     padding-bottom: 20px;
+    background-color: #00DDEB;
+    position: relative;
+  margin-left: -50px;
   }
 
   .price-details{
