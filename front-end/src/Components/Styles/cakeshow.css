@@ -208,11 +208,14 @@ padding: 2%;
   }
 
   .contains {
- 
-    transform: scale(.3);
+    transform: scale(.4);
     display: flex;
-    float: left;
-   margin: auto;
+    padding-top: 100px; 
+    padding-left: 100px;
+    padding-bottom: 20px;
+  
+
+
   }
 
   .price-details{
