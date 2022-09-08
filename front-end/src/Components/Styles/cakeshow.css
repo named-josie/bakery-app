@@ -215,7 +215,9 @@ padding: 2%;
   .contains {
     transform: scale(.5);
     display: flex;
-    float: left;
+    padding-top: 100px; 
+    padding-left: 75px;
+    padding-bottom: 20px;
   }
 
   .price-details{
@@ -223,11 +225,7 @@ padding: 2%;
     padding-left: 10px;
     color: #000000;
   }
-  .show_name{
-    font-size: 30px;
-    padding-left: 10px;
-    color: #DCB0C5;
-  }
+ 
 
   hr {
     filter: blur(1px);  
