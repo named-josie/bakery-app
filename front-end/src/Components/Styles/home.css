@@ -90,11 +90,12 @@ border-radius: 2%;
     font-family: 'Emilys Candy', cursive;
     color: #BDA7C7;
     font-size: 50px;
+    padding-bottom: 10px;
 
 }
 
 .rosette{
-    /* height: 600px; */
+   
     border-radius: 2%;
    
 }
@@ -178,8 +179,8 @@ border-radius: 2%;
   }
   
   .image {
-    width: 1000px;
-    height: 600px;
+    width: 900px;
+    height: 500px;
     border-radius: 10px;
   }
   
@@ -212,6 +213,6 @@ border-radius: 2%;
   
   .slide.active {
     opacity: 1;
-    transition-duration: 2s;
+    transition-duration: 3s;
     transform: scale(1.2);
   }

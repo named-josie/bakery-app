@@ -19,13 +19,27 @@ color: #BDA7C7;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
     color: #7BA3BE;
+    margin-right: 10%;
 }
 
 
 .logoloco{
 transform: scale(.5);
 padding-top: 5%;
-display: block;
 margin-left: auto;
 margin-right: auto;
+display: block;
+}
+
+.biodev{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 10%;
+}
+
+.github{
+    padding-left: 10px;
+  padding-bottom: 20px;
+
 }

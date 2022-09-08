@@ -34,19 +34,20 @@ export default function About() {
           ></img>
         </div>
         <br></br>
-        <div>
+        <hr></hr>
+        <div className='biodev'>
          <h4>About the developer</h4>
           <div className="border">
           <img
             className="profile"
-            style={{ width: '175px', height: '150px' }}
+            style={{ width: '175px', height: '175px' }}
             src="https://avatars.githubusercontent.com/u/96319104?v=4"
             alt="Josie"
           />
           </div>
       
           <h3 className="name">Jossy Pascasio</h3>
-          <p className="para">
+          <p className='bio'>
             I am a Full Stack Software Engineer in the NYC with a Bachelor/'s
             Degree and 6+ years professional experience in Business
             Administration. I am a naturally curious person which makes me want
