@@ -215,9 +215,7 @@ padding: 2%;
   .contains {
     transform: scale(.5);
     display: flex;
-    padding-top: 100px; 
-    padding-left: 75px;
-    padding-bottom: 20px;
+    float: left;
   }
 
   .price-details{
