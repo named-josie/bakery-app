@@ -207,6 +207,11 @@ padding: 2%;
     color: #71285c;
   }
 
+ .containing{
+  display: flex;
+ }
+
+
   .contains {
     transform: scale(.5);
     display: flex;

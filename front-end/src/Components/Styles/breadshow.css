@@ -207,11 +207,15 @@ padding: 2%;
   color: #71285c;
 }
 
+.containing {
+display: flex;
+flex-direction: row;
+}
+
 .contains-bread {
   transform: scale(.5);
   display: flex;
   padding-top: 100px; 
-  padding-left: 75px;
   padding-bottom: 20px;
 }
 

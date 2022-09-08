@@ -54,12 +54,12 @@ export default function BreadDetails() {
         {bread.description}
       </p>
       <div>
-      <img className='contains-bread' style={{ width: '175px', height: '165px' }}d src={eggs} alt=""></img>
+      <img className='contains' style={{ width: '175px', height: '165px' }}d src={eggs} alt=""></img>
       <img className='contains' style={{ width: '175px', height: '165px' }}d src={gluten} alt=""></img>
       <img className='contains' 
       style={{ width: '175px', height: '165px' }}dsrc={milk} alt=""></img>
       <img className='contains' style={{ width: '175px', height: '165px' }}d src={treenuts} alt=""></img>
-      <img className='contains' style={{ width: '175px', height: '165px' }}d src={thc} alt=""></img>
+     
       </div>
       </div>
       <div className='bread-image'>
