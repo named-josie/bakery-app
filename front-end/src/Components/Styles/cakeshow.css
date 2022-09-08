@@ -215,9 +215,8 @@ padding: 2%;
     display: flex;
     float: left;
     padding-bottom: 20px;
-    background-color: #00DDEB;
     position: relative;
-  margin-left: -50px;
+    margin-left: -50px;
   }
 
   .price-details{
