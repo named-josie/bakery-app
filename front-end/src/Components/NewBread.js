@@ -18,7 +18,7 @@ export default function NewBread() {
     setBread({ ...bread, [event.target.id]: event.target.value });
   };
   const handleCheckboxChange = () => {
-    setBread({ ...bread, is_favorite: !bread.is_favorite});
+    setBread({ ...bread, is_favorite: !bread.is_favorite });
   };
 
   const handleSubmit = (event) => {
@@ -63,11 +63,11 @@ export default function NewBread() {
             onChange={handleTextChange}
           />
           <label className='new-label1' htmlFor='description'>
-          Description
+            Description
           </label>
-            <textarea
-            rows="5"
-            cols="20"
+          <textarea
+            rows='5'
+            cols='20'
             className='text'
             id='description'
             value={bread.description}
@@ -75,10 +75,8 @@ export default function NewBread() {
             placeholder='words'
             onChange={handleTextChange}
             required
-            />
-           
-          
-          
+          />
+
           <label className='new-label1' htmlFor='image'>
             Image Url
           </label>
@@ -91,14 +89,14 @@ export default function NewBread() {
             value={bread.image}
             onChange={handleTextChange}
           />
-          <label htmlFor="isFavorite">Favorite:</label>
-        <input
-          id="isFavorite"
-          type="checkbox"
-          className='favor'
-          onChange={handleCheckboxChange}
-          checked={bread.is_favorite}
-        />
+          <label htmlFor='isFavorite'>Favorite:</label>
+          <input
+            id='isFavorite'
+            type='checkbox'
+            className='favor'
+            onChange={handleCheckboxChange}
+            checked={bread.is_favorite}
+          />
           <br />
           <input className='button' type='submit' />
         </div>

@@ -19,9 +19,8 @@ export default function NewCake() {
   };
 
   const handleCheckboxChange = () => {
-    setCake({ ...cake, is_favorite: !cake.is_favorite});
+    setCake({ ...cake, is_favorite: !cake.is_favorite });
   };
-
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -65,11 +64,11 @@ export default function NewCake() {
             onChange={handleTextChange}
           />
           <label className='new-label1' htmlFor='description'>
-          Description
+            Description
           </label>
           <textarea
-            rows="5"
-            cols="20"
+            rows='5'
+            cols='20'
             className='text'
             id='description'
             value={cake.description}
@@ -77,7 +76,7 @@ export default function NewCake() {
             placeholder='words'
             onChange={handleTextChange}
             required
-            />
+          />
           <label className='new-label1' htmlFor='image'>
             Imagen
           </label>
@@ -90,16 +89,15 @@ export default function NewCake() {
             value={cake.image}
             onChange={handleTextChange}
           />
-          <label htmlFor="isFavorite">Favorite:</label>
-        <input
-          id="isFavorite"
-          type="checkbox"
-          className='favor'
-          onChange={handleCheckboxChange}
-          checked={cake.is_favorite}
-        />
+          <label htmlFor='isFavorite'>Favorite:</label>
+          <input
+            id='isFavorite'
+            type='checkbox'
+            className='favor'
+            onChange={handleCheckboxChange}
+            checked={cake.is_favorite}
+          />
           <input className='button' type='submit' />
-        
         </div>
       </form>
     </div>

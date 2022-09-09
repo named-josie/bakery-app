@@ -1,9 +1,10 @@
 import Cakes from '../Cakes';
-import '../Styles/cakes.css'
-export default function IndexCake({setItem}) {
+import '../Styles/cakes.css';
+
+export default function IndexCake({ setItem }) {
   return (
     <div>
-      <Cakes setItem={setItem}/>
+      <Cakes setItem={setItem} />
     </div>
   );
 }

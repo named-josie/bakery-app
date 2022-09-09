@@ -2,7 +2,14 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import StarRating from 'star-rating-react';
 
-export default function Mini({ mini, formatter, setItem, onClick, height, width }) {
+export default function Mini({
+  mini,
+  formatter,
+  setItem,
+  onClick,
+  height,
+  width,
+}) {
   const [star, setStar] = useState(0);
 
   useEffect(() => {

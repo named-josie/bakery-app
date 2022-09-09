@@ -1,13 +1,10 @@
-import Breads from '../Breads'
-import '../Styles/bread.css'
+import Breads from '../Breads';
+import '../Styles/bread.css';
 
-
-
-export default function IndexBread({setItem}) {
+export default function IndexBread({ setItem }) {
   return (
     <div>
-      <Breads setItem={setItem}/> 
-  </div>
-
-  )
+      <Breads setItem={setItem} />
+    </div>
+  );
 }

@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { SliderData } from './SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 
@@ -39,4 +39,3 @@ const ImageSlider = ({ slides }) => {
 };
 
 export default ImageSlider;
-

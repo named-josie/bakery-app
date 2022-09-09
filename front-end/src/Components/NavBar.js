@@ -3,8 +3,7 @@ import './Styles/navbar.css';
 import logo3 from './assets/logo3.png';
 import { RiShoppingBasketLine } from 'react-icons/ri';
 
-export default function NavBar({item}) {
- 
+export default function NavBar({ item }) {
   return (
     <nav className='navbar'>
       <div>
@@ -26,7 +25,7 @@ export default function NavBar({item}) {
         <Link to='/about'>About</Link>
       </p>
       <h1 className='basket'>
-        <RiShoppingBasketLine  /> {item} 
+        <RiShoppingBasketLine /> {item}
       </h1>
     </nav>
   );

@@ -5,11 +5,13 @@ import { Link } from 'react-router-dom';
 
 const API = process.env.REACT_APP_API_URL;
 
-const formatter = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2 })
+const formatter = new Intl.NumberFormat('de-DE', {
+  style: 'currency',
+  currency: 'EUR',
+  minimumFractionDigits: 2,
+});
 
- 
-
-export default function Cakes({setItem}) {
+export default function Cakes({ setItem }) {
   const [cakes, setCakes] = useState([]);
   useEffect(() => {
     axios
@@ -21,25 +23,32 @@ export default function Cakes({setItem}) {
         console.log(err);
       });
   }, [cakes]);
- 
-//  const handleCheckbox = () => {
-//     setCakes({ ...cakes, isFavorite: !cakes.isFavorite });
-//    };  
+
+  //  const handleCheckbox = () => {
+  //     setCakes({ ...cakes, isFavorite: !cakes.isFavorite });
+  //    };
 
   return (
     <div className='cakes'>
       {/* <h1 className='title-cakes'>Tartas</h1> */}
       <section className='all-cakes'>
         {cakes?.map((cake) => {
-          return <Cake key={cake.id} setItem={setItem} cake={cake} formatter={formatter}/>;
+          return (
+            <Cake
+              key={cake.id}
+              setItem={setItem}
+              cake={cake}
+              formatter={formatter}
+            />
+          );
         })}
       </section>
       <br />
       <div>
-      <Link to={`/cakes/new`}>
-            <button className='button-breads'>New</button>
-          </Link>
-          </div>
+        <Link to={`/cakes/new`}>
+          <button className='button-breads'>New</button>
+        </Link>
+      </div>
     </div>
   );
 }

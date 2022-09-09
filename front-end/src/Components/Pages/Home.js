@@ -8,7 +8,6 @@ export default function Home() {
   return (
     
     <div>
-      <img className='home-pic' src={logo4} alt=""></img>
       <h1 className='welcome'>Bienvenido a la experiencia más dulce de tu vida</h1>
      
       <div className='home'>

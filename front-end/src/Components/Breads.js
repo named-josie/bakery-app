@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom';
 import Bread from './Bread';
 import axios from 'axios';
 
-
 const API = process.env.REACT_APP_API_URL;
 
-const formatter = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2 })
+const formatter = new Intl.NumberFormat('de-DE', {
+  style: 'currency',
+  currency: 'EUR',
+  minimumFractionDigits: 2,
+});
 
- 
-
-export default function Breads({setItem}) {
+export default function Breads({ setItem }) {
   const [breads, setBreads] = useState([]);
   useEffect(() => {
     axios
@@ -22,21 +23,27 @@ export default function Breads({setItem}) {
         console.log(err);
       });
   }, [breads]);
- 
 
   return (
     <div className='breads'>
       <section className='all-breads'>
         {breads?.map((bread) => {
-          return <Bread key={bread.id} setItem={setItem} bread={bread} formatter={formatter}/>;
+          return (
+            <Bread
+              key={bread.id}
+              setItem={setItem}
+              bread={bread}
+              formatter={formatter}
+            />
+          );
         })}
       </section>
       <br />
       <div>
-      <Link to={`/breads/new`}>
-            <button className='button-breads'>New</button>
-          </Link>
-          </div>
+        <Link to={`/breads/new`}>
+          <button className='button-breads'>New</button>
+        </Link>
+      </div>
     </div>
   );
 }

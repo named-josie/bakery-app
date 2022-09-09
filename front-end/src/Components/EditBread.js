@@ -5,14 +5,14 @@ import axios from 'axios';
 const API = process.env.REACT_APP_API_URL;
 
 export default function EditBread() {
-    const navigate = useNavigate();
-    let { id } = useParams();
-    const [bread, setBread] = useState({
-      name: '',
-      price: 0,
-      description: '',
-      image: '',
-    });
+  const navigate = useNavigate();
+  let { id } = useParams();
+  const [bread, setBread] = useState({
+    name: '',
+    price: 0,
+    description: '',
+    image: '',
+  });
 
   const updateBread = (updatedBread) => {
     axios
@@ -50,37 +50,37 @@ export default function EditBread() {
     <div className='edit'>
       <h1 className='title'>Edit Bread Entry</h1>
       <form className='form' onSubmit={handleSubmit}>
-      <div className='color2'>
-        <label className='edit-label' htmlFor='name'>
-          Name
-        </label>
-        <input
-          className='text'
-          id='name'
-          type='text'
-          placeholder='Name Of Bread'
-          required
-          value={bread.name}
-          onChange={handleTextChange}
-        />
-        <label className='edit-label' htmlFor='protein'>
-          Price
-        </label>
-        <input
-          className='text'
-          id='price'
-          type='number'
-          name='price'
-          value={bread.price}
-          placeholder='0'
-          onChange={handleTextChange}
-        />
-        <label className='edit-label' htmlFor='description'>
-        Descripción:
-        </label>
-        <textarea
-            rows="5"
-            cols="20"
+        <div className='color2'>
+          <label className='edit-label' htmlFor='name'>
+            Nombre:
+          </label>
+          <input
+            className='text'
+            id='name'
+            type='text'
+            placeholder='Name Of Bread'
+            required
+            value={bread.name}
+            onChange={handleTextChange}
+          />
+          <label className='edit-label' htmlFor='protein'>
+            Precio:
+          </label>
+          <input
+            className='text'
+            id='price'
+            type='number'
+            name='price'
+            value={bread.price}
+            placeholder='0'
+            onChange={handleTextChange}
+          />
+          <label className='edit-label' htmlFor='description'>
+            Descripción:
+          </label>
+          <textarea
+            rows='5'
+            cols='20'
             className='text'
             id='description'
             value={bread.description}
@@ -88,9 +88,9 @@ export default function EditBread() {
             placeholder='words'
             onChange={handleTextChange}
             required
-            />
-        <label className='edit-label' htmlFor='image'>
-            Image Url
+          />
+          <label className='edit-label' htmlFor='image'>
+            Imagen:
           </label>
           <input
             className='text'
@@ -101,15 +101,12 @@ export default function EditBread() {
             value={bread.image}
             onChange={handleTextChange}
           />
-        <input type='submit' />
-       
+          <input type='submit' />
         </div>
         <Link to={`/breads/${id}`}>
           <button className='edit-button'>Back</button>
         </Link>
-        
       </form>
-      
     </div>
   );
 }

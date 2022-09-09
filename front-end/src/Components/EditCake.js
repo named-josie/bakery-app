@@ -5,14 +5,14 @@ import axios from 'axios';
 const API = process.env.REACT_APP_API_URL;
 
 export default function EditCake() {
-    const navigate = useNavigate();
-    let { id } = useParams();
-    const [cake, setCake] = useState({
-      name: '',
-      price: 0,
-      description: '',
-      image: '',
-    });
+  const navigate = useNavigate();
+  let { id } = useParams();
+  const [cake, setCake] = useState({
+    name: '',
+    price: 0,
+    description: '',
+    image: '',
+  });
 
   const updateCake = (updatedCake) => {
     axios
@@ -50,37 +50,37 @@ export default function EditCake() {
     <div className='edit'>
       <h1 className='title'>Editar Entrada de La Tarta</h1>
       <form className='form' onSubmit={handleSubmit}>
-      <div className='color2'>
-        <label className='edit-label' htmlFor='name'>
-          Nombre:
-        </label>
-        <input
-          className='text'
-          id='name'
-          type='text'
-          placeholder='Name Of Cake'
-          required
-          value={cake.name}
-          onChange={handleTextChange}
-        />
-        <label className='edit-label' htmlFor='protein'>
-        Precio:
-        </label>
-        <input
-          className='text'
-          id='price'
-          type='number'
-          name='price'
-          value={cake.price}
-          placeholder='0'
-          onChange={handleTextChange}
-        />
-        <label className='edit-label' htmlFor='description'>
-        Descripción:
-        </label>
-         <textarea
-            rows="5"
-            cols="20"
+        <div className='color2'>
+          <label className='edit-label' htmlFor='name'>
+            Nombre:
+          </label>
+          <input
+            className='text'
+            id='name'
+            type='text'
+            placeholder='Name Of Cake'
+            required
+            value={cake.name}
+            onChange={handleTextChange}
+          />
+          <label className='edit-label' htmlFor='protein'>
+            Precio:
+          </label>
+          <input
+            className='text'
+            id='price'
+            type='number'
+            name='price'
+            value={cake.price}
+            placeholder='0'
+            onChange={handleTextChange}
+          />
+          <label className='edit-label' htmlFor='description'>
+            Descripción:
+          </label>
+          <textarea
+            rows='5'
+            cols='20'
             className='text'
             id='description'
             value={cake.description}
@@ -88,9 +88,9 @@ export default function EditCake() {
             placeholder='words'
             onChange={handleTextChange}
             required
-            />
-        <label className='edit-label' htmlFor='image'>
-           URL Imagen:
+          />
+          <label className='edit-label' htmlFor='image'>
+            URL Imagen:
           </label>
           <input
             className='text'
@@ -101,15 +101,12 @@ export default function EditCake() {
             value={cake.image}
             onChange={handleTextChange}
           />
-        <input type='submit' />
-       
+          <input type='submit' />
         </div>
         <Link to={`/cakes/${id}`}>
           <button className='editcake-button'>Back</button>
         </Link>
-        
       </form>
-      
     </div>
   );
 }
