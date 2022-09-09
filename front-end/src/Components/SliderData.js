@@ -1,4 +1,7 @@
 export const SliderData = [
+  {image: 'https://bonifaciobakery.netlify.app/images/sach.png'},
+  
+  
   {
     image: 'https://bonifaciobakery.netlify.app/images/redvelvet.png',
   },
