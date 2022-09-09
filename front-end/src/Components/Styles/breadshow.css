@@ -30,6 +30,7 @@
   z-index: 0;
   border-radius: 10px;
   margin: 15px;
+  margin-bottom: 20%;
   user-select: none;
 -webkit-user-select: none;
 touch-action: manipulation;
@@ -185,7 +186,7 @@ padding: 2%;
 }
 
 .bread_show_button {
-  background-color: #05062d;  
+  background-color: #000000;  
   padding: 16px 24px;
   border-radius: 6px;
   transition: 300ms;
@@ -217,13 +218,13 @@ padding: 2%;
   margin-left: -50px;
 }
 
-.price-breaddetail{
-  font-size: 26px;
+.price-breaddetails{
+  font-size: 25px;
   padding-left: 10px;
   color: #000000;
 }
-.show_name{
-  font-size: 30px;
+.show_name_bread{
+  font-size: 27px;
   padding-left: 10px;
   color: #DCB0C5;
 }

@@ -19,10 +19,12 @@
 .cake-show {
     display: flex;
    padding-top: 10%;
+  
 }
 
 .cake-image { 
-    padding: 1em 2em;
+  display: flex;  
+  padding: 1em 2em;
     border: none;
     outline: none;
     background-color: #C1A7C9;
@@ -30,13 +32,17 @@
     z-index: 0;
     border-radius: 10px;
     margin: 15px;
+    margin-bottom: 20%;
     user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
 .cakeinfo{
-    padding: 1em 2em;
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1em 2em;
     border: none;
     outline: none;
     color: #7EA3C3;
@@ -211,16 +217,17 @@ padding: 2%;
 
 
   .contains {
-    transform: scale(.5);
+    transform: scale(.4);
     display: flex;
     float: left;
     padding-bottom: 20px;
     position: relative;
-    margin-left: -50px;
+    margin-left: -70px;
+  
   }
 
-  .price-details{
-    font-size: 26px;
+  .cake-price-details{
+    font-size: 22px;
     padding-left: 10px;
     color: #000000;
   }

@@ -5,7 +5,7 @@ import gluten from './assets/gluten.png'
 import eggs from './assets/eggs.png'
 import milk from './assets/milk.png'
 import treenuts from './assets/treenuts.png'
-
+import thc from './assets/thc.png'
 
 
 const API = process.env.REACT_APP_API_URL;
@@ -59,7 +59,7 @@ export default function CakeDetails() {
       <img className='contains' 
        style={{ width: '175px', height: '165px' }} src={milk} alt=""></img>
       <img className='contains' s style={{ width: '175px', height: '165px' }} src={treenuts} alt=""></img>
-      
+      <img className='contains' style={{ width: '175px', height: '165px' }} src={thc} alt=""></img>
       </div>
       </div>
       <div className='cake-image'>
