@@ -12,7 +12,7 @@
 
   .show_p{
     padding-left: 10px;
-    font-size: 25px; 
+    font-size: 20px; 
     
   } 
 
@@ -220,7 +220,7 @@ padding: 2%;
   
   @media (min-width: 768px) {
     .cake_show_button {
-      font-size: 24px;
+      font-size: 18px;
       min-width: 196px;
     }
   }  
@@ -230,7 +230,6 @@ padding: 2%;
   }
 
   .contains {
- 
     transform: scale(.29);
     display: flex;
     float: left;
@@ -238,13 +237,13 @@ padding: 2%;
     margin: -80px;
   }
 
-  .price-details{
-    font-size: 35px;
+  .cake-price-details{
+    font-size: 25px;
     padding-left: 10px;
     color: #000000;
   }
-  .show_name{
-    font-size: 40px;
+  .shows-cake-name{
+    font-size: 27px;
     padding-left: 10px;
     color: #DCB0C5;
   }

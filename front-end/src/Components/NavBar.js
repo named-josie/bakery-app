@@ -28,9 +28,6 @@ export default function NavBar({item}) {
       <h1 className='basket'>
         <RiShoppingBasketLine  /> {item} 
       </h1>
-      <a href="javascript:void(0);" className="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
     </nav>
   );
 }

@@ -76,7 +76,7 @@ export default function EditBread() {
           onChange={handleTextChange}
         />
         <label className='edit-label' htmlFor='description'>
-        Description
+        Descripción:
         </label>
         <textarea
             rows="5"

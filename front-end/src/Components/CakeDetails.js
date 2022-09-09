@@ -5,7 +5,7 @@ import gluten from './assets/gluten.png'
 import eggs from './assets/eggs.png'
 import milk from './assets/milk.png'
 import treenuts from './assets/treenuts.png'
-import thc from './assets/thc.png'
+
 
 
 const API = process.env.REACT_APP_API_URL;
@@ -43,11 +43,11 @@ export default function CakeDetails() {
   return (
     <div className='cake-show'>
          <div className='cakeinfo'>
-        <h2 className='show_name'>
+        <h2 className='shows-cake-name'>
          {cake.name}
       </h2>
       <hr></hr>
-      <h3 className='price-details'>
+      <h3 className='cake-price-details'>
       {formatter.format(cake.price)}
       </h3>
       <p className='show_p'>
@@ -59,7 +59,7 @@ export default function CakeDetails() {
       <img className='contains' 
        style={{ width: '175px', height: '165px' }} src={milk} alt=""></img>
       <img className='contains' s style={{ width: '175px', height: '165px' }} src={treenuts} alt=""></img>
-      <img className='contains'  style={{ width: '175px', height: '165px' }} src={thc} alt=""></img>
+      
       </div>
       </div>
       <div className='cake-image'>
